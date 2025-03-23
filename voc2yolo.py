@@ -2,11 +2,12 @@ import glob
 import os
 import xml.etree.ElementTree as ET
 
-# Define the directories to process (e.g., 'train' and 'val')
-dirs = ['train']
+# Define the directories to process
+annotations_dir = '/home/martina/codi2/3year/synthesisII/bbox_detection/prova_dataset/Annotations'
+images_dir = '/home/martina/codi2/3year/synthesisII/bbox_detection/prova_dataset/JPEGImages'
 
 # Path to the text file containing class names (one class per line)
-classes_file = 'classes.txt'
+classes_file = '/home/martina/codi2/3year/synthesisII/bbox_detection/labels.txt'
 
 def read_classes(file_path):
     """
@@ -24,7 +25,8 @@ def getImagesInDir(dir_path):
     """
     image_list = []
     for ext in ['*.jpg', '*.jpeg', '*.png']:
-        image_list.extend(glob.glob(os.path.join(dir_path, ext)))
+        images = glob.glob(os.path.join(dir_path, ext))
+        image_list.extend(images)
     return image_list
 
 def convert(size, box):
@@ -44,9 +46,11 @@ def convert(size, box):
     h = h * dh  # Normalize height
     return (x, y, w, h)
 
-def convert_annotation(dir_path, output_path, image_path, classes):
+def convert_annotation(dir_path, image_path, classes):
     """
     Convert a Pascal VOC annotation file (XML) to YOLO format (TXT).
+    The YOLO annotation file (.txt) will be saved in the same directory as the XML file.
+    If no objects are found, an empty .txt file will be created.
     """
     # Extract the base filename (without extension) from the image path
     basename = os.path.basename(image_path)
@@ -54,7 +58,7 @@ def convert_annotation(dir_path, output_path, image_path, classes):
 
     # Define input (XML) and output (TXT) file paths
     in_file = os.path.join(dir_path, basename_no_ext + '.xml')
-    out_file = os.path.join(output_path, basename_no_ext + '.txt')
+    out_file = os.path.join(dir_path, basename_no_ext + '.txt')  # Save .txt in the same directory as XML
 
     # Skip if the XML file doesn't exist
     if not os.path.exists(in_file):
@@ -72,13 +76,22 @@ def convert_annotation(dir_path, output_path, image_path, classes):
 
     # Open the output file to write YOLO annotations
     with open(out_file, 'w') as out_file:
+        # Flag to check if any objects were found
+        objects_found = False
+
         # Iterate over all objects in the XML file
         for obj in root.iter('object'):
-            difficult = obj.find('difficult').text
+            # Handle missing or invalid 'difficult' field
+            difficult = obj.find('difficult')
+            if difficult is not None and difficult.text is not None and difficult.text.strip().isdigit():
+                difficult = int(difficult.text)
+            else:
+                difficult = 0  # Default to 0 if 'difficult' is missing or invalid
+
             cls = obj.find('name').text  # Get the class name
 
             # Skip if the class is not in the list or is marked as difficult
-            if cls not in classes or int(difficult) == 1:
+            if cls not in classes or difficult == 1:
                 continue
 
             # Get the class ID (index in the classes list)
@@ -94,6 +107,14 @@ def convert_annotation(dir_path, output_path, image_path, classes):
             # Write the YOLO annotation to the output file
             out_file.write(str(cls_id) + " " + " ".join([str(a) for a in bb]) + '\n')
 
+            # Set the flag to True if at least one object is found
+            objects_found = True
+
+        # If no objects were found, create an empty .txt file
+        if not objects_found:
+            print(f"No objects found in {in_file}. Creating an empty .txt file.")
+            # The file is already opened in 'w' mode, so it will be empty
+
 def main():
     """
     Main function to process all directories and convert annotations.
@@ -102,35 +123,14 @@ def main():
     classes = read_classes(classes_file)
     print(f"Classes loaded: {classes}")
 
-    # Get the current working directory
-    cwd = os.getcwd()
+    # Get all image paths in the images directory
+    image_paths = getImagesInDir(images_dir)
 
-    # Process each directory (e.g., 'train' and 'val')
-    for dir_path in dirs:
-        # Construct the full path to the directory
-        full_dir_path = os.path.join(cwd, dir_path)
+    # Process each image and convert its corresponding annotation
+    for image_path in image_paths:
+        convert_annotation(annotations_dir, image_path, classes)
 
-        # Define the output directory for YOLO annotations
-        output_path = os.path.join(full_dir_path, 'yolo')
-
-        # Create the output directory if it doesn't exist
-        if not os.path.exists(output_path):
-            os.makedirs(output_path)
-
-        # Get all image paths in the directory
-        image_paths = getImagesInDir(full_dir_path)
-
-        # Create a text file to list all image paths
-        list_file_path = os.path.join(cwd, dir_path + '.txt')
-        with open(list_file_path, 'w') as list_file:
-            for image_path in image_paths:
-                # Write the image path to the list file
-                list_file.write(image_path + '\n')
-
-                # Convert the corresponding annotation to YOLO format
-                convert_annotation(full_dir_path, output_path, image_path, classes)
-
-        print(f"Finished processing: {dir_path}")
+    print(f"Finished processing: {annotations_dir}")
 
 if __name__ == "__main__":
     # Run the main function
