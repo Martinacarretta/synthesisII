@@ -1,16 +1,14 @@
-#!/usr/bin/env python
-
-from __future__ import print_function
-
-import argparse
-import glob
 import os
 import os.path as osp
-import sys
+import glob
+import base64
+import json
+import argparse
 
 import imgviz
-
 import labelme
+import numpy as np
+from labelme.label_file import LabelFile
 
 try:
     import lxml.builder
@@ -18,6 +16,26 @@ try:
 except ImportError:
     print("Please install lxml:\n\n    pip install lxml\n")
     sys.exit(1)
+
+
+def create_json_for_image(image_path, output_json_path):
+    """Create a JSON file for an image with no bounding boxes."""
+    # Encode the image in base64
+    with open(image_path, "rb") as image_file:
+        image_data = base64.b64encode(image_file.read()).decode("utf-8")
+
+    # Create JSON structure
+    json_data = {
+        "version": "5.2.1",
+        "flags": {},
+        "shapes": [],
+        "imagePath": osp.basename(image_path),
+        "imageData": image_data,
+    }
+
+    # Save JSON to a file
+    with open(output_json_path, "w") as f:
+        json.dump(json_data, f, indent=2)
 
 
 def main():
@@ -59,12 +77,25 @@ def main():
         f.writelines("\n".join(class_names))
     print("Saved class_names:", out_class_names_file)
 
-    for filename in glob.glob(osp.join(args.input_dir, "*.json")):
-        print("Generating dataset from:", filename)
+    # Process images in the input directory
+    for image_path in glob.glob(osp.join(args.input_dir, "*.jpg")) + glob.glob(
+        osp.join(args.input_dir, "*.jpeg")
+    ):
+        base = osp.splitext(osp.basename(image_path))[0]
+        json_path = osp.join(args.input_dir, base + ".json")
 
-        label_file = labelme.LabelFile(filename=filename)
+        # If no JSON file exists, create one
+        if not osp.exists(json_path):
+            print(f"No JSON file found for {image_path}. Creating one...")
+            create_json_for_image(image_path, json_path)
 
-        base = osp.splitext(osp.basename(filename))[0]
+        # Process the JSON file
+        try:
+            label_file = LabelFile(filename=json_path)
+        except Exception as e:
+            print(f"Skipping {json_path} due to error: {e}")
+            continue
+
         out_img_file = osp.join(args.output_dir, "JPEGImages", base + ".jpg")
         out_xml_file = osp.join(args.output_dir, "Annotations", base + ".xml")
         if not args.noviz:
@@ -95,7 +126,7 @@ def main():
         for shape in label_file.shapes:
             if shape["shape_type"] != "rectangle":
                 print(
-                    "Skipping shape: label={label}, " "shape_type={shape_type}".format(
+                    "Skipping shape: label={label}, shape_type={shape_type}".format(
                         **shape
                     )
                 )
