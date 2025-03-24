@@ -1,5 +1,5 @@
-train: /home/martina/codi2/3year/synthesisII/bbox_detection/prova_dataset/JPEGImages
-val: /home/martina/codi2/3year/synthesisII/bbox_detection/prova_dataset/JPEGImages
+train: /home/martina/codi2/3year/synthesisII/yolo_dataset/images/train
+val: /home/martina/codi2/3year/synthesisII/yolo_dataset/images/val
 
-nc: 4  # number of classes
-names: ["__ignore__", "arm", "baby", "leg"]  # class names
+nc: 6  # number of classes
+names: ['baby', 'core', 'arm', 'leg', 'hand', 'foot']

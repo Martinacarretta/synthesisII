@@ -1,4 +1,6 @@
-__ignore__
-arm
 baby
+core
+arm
 leg
+hand
+foot
