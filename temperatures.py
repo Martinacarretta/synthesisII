@@ -154,26 +154,35 @@ def check_temperatures(path, max_temp, min_temp, keypoints):
         return temperatures
     
         
-filepath = "/home/cvmsct05/temperatures_max_min/29/14.08.24-15.08.24.csv"
+filepath = "/home/cvmsct05/trial2.csv"
 
 updated_lines = []
 
 with open(filepath, 'r') as file:
-    for line in file:
-        # read the path, min temp and max temp
-        path, mint, maxt, keypoints = read_file_line(line)
-        
-        # Convert keypoints to ints (they are strings)
-        keypoints = [(int(x), int(y)) for x, y in keypoints]
+    lines = file.readlines()
 
-        temperatures = check_temperatures(path, maxt, mint, keypoints)
-        
-        # Format temperatures as strings
-        temp_str = ",".join([f"{t:.2f}" for t in temperatures])
-        
-        # Append to line and save
-        new_line = line.strip() + "," + temp_str + "\n"
-        updated_lines.append(new_line)
+header = lines[0].strip()
+updated_lines.append(header + ",core_temp,arm1_temp,arm2_temp,leg1_temp,leg2_temp\n")
+
+i = 0 #just to print
+
+for line in lines[1:]:
+    print(i)
+    i +=  1
+    # read the path, min temp and max temp
+    path, mint, maxt, keypoints = read_file_line(line)
+    
+    # Convert keypoints to ints (they are strings)
+    keypoints = [(int(x), int(y)) for x, y in keypoints]
+
+    temperatures = check_temperatures(path, maxt, mint, keypoints)
+    
+    # Format temperatures as strings
+    temp_str = ",".join([f"{t:.2f}" for t in temperatures])
+    
+    # Append to line and save
+    new_line = line.strip() + "," + temp_str + "\n"
+    updated_lines.append(new_line)
         
 # Now overwrite the file with the new content
 with open(filepath, 'w') as file:
