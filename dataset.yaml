@@ -1,5 +1,0 @@
-train: /home/martina/codi2/3year/synthesisII/yolo_dataset/images/train
-val: /home/martina/codi2/3year/synthesisII/yolo_dataset/images/val
-
-nc: 6  # number of classes
-names: ['baby', 'core', 'arm', 'leg', 'hand', 'foot']
