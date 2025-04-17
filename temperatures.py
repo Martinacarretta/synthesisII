@@ -286,28 +286,47 @@ def process_line(line, i):
         
     return (i, new_line)  # Return both index and processed line
 
-filepath = "/home/cvmsct05/temperatures_max_min/29/20.08.24/20.08.24.csv"
+def resolve_csv_paths(path):
+    if os.path.isfile(path) and path.endswith(".csv"):
+        return [path]
+    elif os.path.isdir(path):
+        csv_files = []
+        for root, dirs, files in os.walk(path):
+            for file in files:
+                if file.endswith(".csv"):
+                    csv_files.append(os.path.join(root, file))
+        return csv_files
+    else:
+        raise ValueError(f"Path '{path}' is not a valid file or directory")
 
-with open(filepath, 'r') as file:
-    lines = file.readlines()
-
-header = lines[0].strip()
-updated_lines = [header + ",core_temp,arm1_temp,arm2_temp,leg1_temp,leg2_temp\n"]
-
-
-# Process lines in parallel (skip header)
-results = Parallel(n_jobs=-1) (
-    delayed(process_line)(line, i) 
-    for i, line in enumerate(lines[1:], 1))
-
-# Sort results by original index and extract just the lines
-results_sorted = [line for i, line in sorted(results, key=lambda x: x[0])]
-updated_lines.extend(results_sorted)
+def main(path):
+    filepaths = resolve_csv_paths(path)
     
-# Now overwrite the file with the new content
-with open(filepath, 'w') as file:
-    file.writelines(updated_lines)
+    for filepath in filepaths:
+        with open(filepath, 'r') as file:
+            lines = file.readlines()
+
+        header = lines[0].strip()
+        if not any(field in header for field in ["core_temp", "arm1_temp", "arm2_temp", "leg1_temp", "leg2_temp"]):
+            header = header + ",core_temp,arm1_temp,arm2_temp,leg1_temp,leg2_temp"
+        updated_lines = [header + "\n"]
+
+        # Process lines in parallel (skip header)
+        results = Parallel(n_jobs=-1) (
+            delayed(process_line)(line, i) 
+            for i, line in enumerate(lines[1:], 1))
+
+        # Sort results by original index and extract just the lines
+        results_sorted = [line for i, line in sorted(results, key=lambda x: x[0])]
+        updated_lines.extend(results_sorted)
+            
+        # Now overwrite the file with the new content
+        with open(filepath, 'w') as file:
+            file.writelines(updated_lines)
+            
+        print(f"✅ Results saved to {filepath}")
+
+if __name__ == "__main__":
+    main("/home/cvmsct05/temperatures_max_min/40")
     
-print(f"✅ Results saved to {filepath}")
-
-
+#"/home/cvmsct05/temperatures_max_min/29/20.08.24/20.08.24.csv"

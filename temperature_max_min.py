@@ -57,9 +57,7 @@ def all_images (path, plot=True):
     return float(max(numbers)), float(min(numbers2))
 
     
-def main():
-    folder_path = "/data/uabcvmsc/shared/newborn/29/15.08.24"
-    
+def process_folder (folder_path):
     image_paths = sorted([f for f in glob.glob(os.path.join(folder_path, "*")) if "VIS" not in f])
     
     # Extract parts of the path for folder and filename
@@ -97,8 +95,45 @@ def main():
             writer.writerow([process, path, max_t, min_t])
 
     print(f"✅ Results saved to {csv_filename}")
+    
+def main(root_path):
+    def is_day_folder(path):
+        return (
+            os.path.isdir(path)
+            and any(f.lower().endswith(('.jpeg', '.jpg', '.png')) for f in os.listdir(path))
+            and all(not os.path.isdir(os.path.join(path, f)) for f in os.listdir(path))
+        )
+
+
+    # Case 1: The root itself is a day folder
+    if os.path.isdir(root_path) and is_day_folder(root_path):
+        print(f"📁 Processing single day folder: {root_path}")
+        process_folder(root_path)
+        return
+
+    # Case 2: The root is a baby folder or root directory
+    for baby_id in os.listdir(root_path):
+        baby_path = os.path.join(root_path, baby_id)
+        if not os.path.isdir(baby_path):
+            continue
+
+        # If this baby folder is actually a day folder
+        if is_day_folder(baby_path):
+            print(f"📁 Processing day folder: {baby_path}")
+            process_folder(baby_path)
+            continue
+
+        # Otherwise, it should contain days
+        for day in os.listdir(baby_path):
+            day_path = os.path.join(baby_path, day)
+            if not os.path.isdir(day_path):
+                continue
+            if is_day_folder(day_path):
+                print(f"📁 Processing day folder: {day_path}")
+                process_folder(day_path)
 
     
 if __name__ == "__main__":
-    main()
+    main("/data/uabcvmsc/shared/newborn/40")     # Default path when run directly
+
 
