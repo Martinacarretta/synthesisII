@@ -91,7 +91,7 @@ def process_folder(folder_path, output_subfolder):
     if "X_0" not in headers:
         headers.extend(keypoint_headers)
 
-    image_paths = image_paths[:4]  ##################################
+    # image_paths = image_paths[:4]  ##################################
 
     # Process each image
     for image_path in image_paths:
@@ -134,7 +134,6 @@ def process_folder(folder_path, output_subfolder):
 
                     if matching_row:
                         matching_row.extend([str(v) for v in keypoint_values])
-                        print(matching_row)
 
                     # Save annotated image
                     annotated_image = draw_landmarks_on_image(image_np, detection_result)
@@ -164,8 +163,8 @@ def process_folder(folder_path, output_subfolder):
 
 
 # Define input and output directories
-input_folder = r"/data/uabcvmsc/shared/newborn/40"
-output_root = r"/home/cvmsct05/temperatures_max_min/40"
+input_folder = r"/data/uabcvmsc/shared/newborn/45"
+output_root = r"/home/cvmsct05/temperatures_max_min/45"
 
 
 os.makedirs(output_root, exist_ok=True)

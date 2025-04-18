@@ -1,14 +1,9 @@
 import numpy as np
 from skimage.color import rgb2lab, deltaE_ciede2000
 from joblib import Parallel, delayed
-import cv2
-import matplotlib.pyplot as plt
-import random
+#import matplotlib.pyplot as plt
 import os
-import glob
 from PIL import Image, ImageDraw
-import pytesseract
-import re
 import math
 
 
@@ -20,22 +15,25 @@ def read_file_line (line):
     
     # Extract the path and temperature values
     process = parts[0].strip()
-    path = parts[1].strip()
-    maxt = float(parts[2].strip())
-    mint = float(parts[3].strip())
-    
-    #extract keypoints we want the temp of
-    keypoints = [(parts[59].strip(), parts[60].strip()),   # Point 11 (X_11, Y_11)
-                           (parts[64].strip(), parts[65].strip()),   # Point 12 (X_12, Y_12)
-                           (parts[74].strip(), parts[75].strip()),   # Point 15 (X_15, Y_15)
-                           (parts[79].strip(), parts[80].strip()),   # Point 16 (X_16, Y_16)
-                           (parts[114].strip(), parts[115].strip()), # Point 23 (X_23, Y_23)
-                           (parts[119].strip(), parts[120].strip()), # Point 24 (X_24, Y_24)
-                           (parts[134].strip(), parts[135].strip()), # Point 27 (X_27, Y_27)
-                           (parts[139].strip(), parts[140].strip())  # Point 28 (X_28, Y_28)
-                          ]
-    
-    return process, path, mint, maxt, keypoints
+    if process == "True":
+        path = parts[1].strip()
+        maxt = float(parts[2].strip())
+        mint = float(parts[3].strip())
+        
+        #extract keypoints we want the temp of
+        keypoints = [(parts[59].strip(), parts[60].strip()),   # Point 11 (X_11, Y_11)
+                            (parts[64].strip(), parts[65].strip()),   # Point 12 (X_12, Y_12)
+                            (parts[74].strip(), parts[75].strip()),   # Point 15 (X_15, Y_15)
+                            (parts[79].strip(), parts[80].strip()),   # Point 16 (X_16, Y_16)
+                            (parts[114].strip(), parts[115].strip()), # Point 23 (X_23, Y_23)
+                            (parts[119].strip(), parts[120].strip()), # Point 24 (X_24, Y_24)
+                            (parts[134].strip(), parts[135].strip()), # Point 27 (X_27, Y_27)
+                            (parts[139].strip(), parts[140].strip())  # Point 28 (X_28, Y_28)
+                            ]
+        
+        return process, path, mint, maxt, keypoints
+    else: 
+        return process, None, None, None, None
     
 
 ####################################### STEP 2: convert to grayscale ##############################################################################
@@ -128,6 +126,8 @@ def color_to_temp_to_grayscale(image, newborn_id, max_temp, min_temp):
 ####################################### STEP 3: check the temperatures of the keypoints #########################################################
 
 def map_normal_to_cropped(baby_ID, x, y, normal_width, normal_height, normalized=True):
+    if x == None or y == None:
+        return None, None
     if normalized:
         x = int(round(x * normal_width))
         y = int(round(y * normal_height))
@@ -187,37 +187,35 @@ def map_normal_to_cropped(baby_ID, x, y, normal_width, normal_height, normalized
     return x4, y4
 
 def check_temperatures(path, newborn_id, max_temp, min_temp, keypoints):
-        try:
-            pil_image = Image.open(path) #thermal
-            image = pil_image.convert("RGB")
-
-            # Convert PIL Image to numpy array
-            image = np.array(image)
-
-        except Exception as e:
-            print(f"Error loading image {path}: {str(e)}")
-            return [float('nan')] * len(keypoints)
-        
-        
-        grayscale_image = color_to_temp_to_grayscale(image, newborn_id, max_temp, min_temp) # RGB --> grayscale (with temperature mapping)
-        h, w = grayscale_image.shape[:2] #to know if keypoints are in the image
-        
-        #get grayscale values at the selected points
-        pixel_values = []
-        for mapped_kp in keypoints:
-            if mapped_kp is not None:
-                x, y = mapped_kp
-                if 0 <= x < w and 0 <= y < h:
-                    pixel_values.append(grayscale_image[int(round(y)), int(round(x))]) # Ensure integer indices
-                else:
-                    pixel_values.append(float('nan'))
-            else:
-                pixel_values.append(float('nan'))
+    try:
+        pil_image = Image.open(path) #thermal
+        image = pil_image.convert("RGB")
+        # Convert PIL Image to numpy array
+        image = np.array(image)
+    except Exception as e:
+        print(f"Error loading image {path}: {str(e)}")
+        return [float('nan')] * len(keypoints)
+    
+    grayscale_image = color_to_temp_to_grayscale(image, newborn_id, max_temp, min_temp) # RGB --> grayscale (with temperature mapping)
+    h, w = grayscale_image.shape[:2] #to know if keypoints are in the image
+    
+    #get grayscale values at the selected points
+    pixel_values = []
+    for mapped_kp in keypoints:
+        if mapped_kp is None or None in mapped_kp:  # Check if either x or y is None
+            pixel_values.append(float('nan'))
+            continue
             
-        # get temperatures by normalizing the value from grayscale to the temperature range
-        temperatures = [normalize(value, 0, 255, min_temp, max_temp) if not math.isnan(value) else float('nan') for value in pixel_values]        
+        x, y = mapped_kp
+        if x is not None and y is not None and 0 <= x < w and 0 <= y < h:
+            pixel_values.append(grayscale_image[int(round(y)), int(round(x))]) # Ensure integer indices
+        else:
+            pixel_values.append(float('nan'))
         
-        return temperatures
+    # get temperatures by normalizing the value from grayscale to the temperature range
+    temperatures = [normalize(value, 0, 255, min_temp, max_temp) if not math.isnan(value) else float('nan') for value in pixel_values]        
+    
+    return temperatures
     
         
 ######################################################################### MAIN ############################################################################
@@ -226,10 +224,10 @@ def process_line(line, i):
     print(i)
     # read the path, min temp and max temp
     process, path, mint, maxt, keypoints = read_file_line(line)
-    newborn_id = path.split('/')[5]
-    #print(newborn_id)
     
-    if process == "True": ######## VIS Exists
+    if process == "True":
+        newborn_id = path.split('/')[5]
+        #print(newborn_id)
         # -------- LOAD IMAGES -------- #
         base_path, ext = os.path.splitext(path)
 
@@ -246,38 +244,16 @@ def process_line(line, i):
 
         # -------- PROCESS -------- #
         # Convert keypoints to ints (they are strings)
-        keypoints = [(int(x), int(y)) for x, y in keypoints]
-        print(keypoints)
-        mapped_keypoints = [map_normal_to_cropped(newborn_id, int(x), int(y), normal_width, normal_height, False) for x, y in keypoints]
-        print(mapped_keypoints)
+        keypoints = [(int(x), int(y)) if x is not None and y is not None else (None, None) for x, y in keypoints]        
+        #print(keypoints)
+        mapped_keypoints = [map_normal_to_cropped(newborn_id, x, y, normal_width, normal_height, False) for x, y in keypoints]
+        #mapped_keypoints = [map_normal_to_cropped(newborn_id, x, y, normal_width, normal_height, False) if x is not None and y is not None else (None, None) for x, y in keypoints]
+        #print(mapped_keypoints)
 
         temperatures = check_temperatures(path, newborn_id, maxt, mint, mapped_keypoints)
-        print(temperatures)
+        #print(temperatures)
         print("------------------------------------------------------------------------")
 
-        # -------- SAVE VISUALIZATION -------- #
-        '''
-        # Draw on normal image
-        normal_draw = ImageDraw.Draw(normal_img)
-        for x, y in keypoints:
-            normal_draw.ellipse([(x-5, y-5), (x+5, y+5)], outline="red", width=4)
-
-        # Draw on thermal image
-        thermal_draw = ImageDraw.Draw(thermal_img)
-        for kp in mapped_keypoints:
-            if kp[0] is not None:
-                x, y = kp
-                thermal_draw.ellipse([(x-5, y-5), (x+5, y+5)], outline="white", width=2)
-
-        # Save to same folder
-        print(f"./{i}normal_with_kp.jpg")
-        normal_save_path = f"./{i}normal_with_kp.jpg"
-        thermal_save_path = f"./{i}_thermal_with_kp.jpg"
-
-        normal_img.save(normal_save_path)
-        thermal_img.save(thermal_save_path)
-        '''
-        
         # -------- UPDATE CSV LINE -------- #
         temp_str = ",".join([f"{t:.2f}" for t in temperatures])
         new_line = line.strip() + "," + temp_str + "\n"
@@ -327,6 +303,6 @@ def main(path):
         print(f"✅ Results saved to {filepath}")
 
 if __name__ == "__main__":
-    main("/home/cvmsct05/temperatures_max_min/40")
+    main("/home/cvmsct05/temperatures_max_min")
     
 #"/home/cvmsct05/temperatures_max_min/29/20.08.24/20.08.24.csv"

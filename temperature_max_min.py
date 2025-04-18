@@ -3,7 +3,6 @@ import pytesseract
 import matplotlib.pyplot as plt
 import numpy as np
 import re
-import random
 from skimage.color import deltaE_ciede2000, rgb2lab
 import csv
 import glob
@@ -51,15 +50,22 @@ def all_images (path, plot=True):
     square_region_upper = image[uy:uy+uh, ux:ux+uw] #max temp square
     square_region_lower = image[ly:ly+lh, lx:lx+lw] #min temp square
     
+
     numbers = process_region(square_region_upper)
     numbers2 = process_region(square_region_lower)
 
-    return float(max(numbers)), float(min(numbers2))
+    try:
+        upper = float(max(numbers)) if numbers else None
+        lower = float(min(numbers2)) if numbers2 else None
+        return upper, lower
+    except (ValueError, TypeError):
+        return None, None
 
     
 def process_folder (folder_path):
-    image_paths = sorted([f for f in glob.glob(os.path.join(folder_path, "*")) if "VIS" not in f])
-    
+    image_paths = sorted([f for f in glob.glob(os.path.join(folder_path, "*")) 
+                         if f.lower().endswith(('.jpeg', '.jpg', '.png')) and "VIS" not in f])
+
     # Extract parts of the path for folder and filename
     path_parts = folder_path.strip("/").split("/")
     
@@ -87,10 +93,14 @@ def process_folder (folder_path):
             i+=1
             max_t, min_t = all_images(path)
             
-            if max_t < 33:
-                process = False
+            if max_t is not None:
+                if max_t < 33:
+                    process = False
+                else:
+                    process = True
             else:
-                process = True
+                process = False
+                
             # Write data to CSV
             writer.writerow([process, path, max_t, min_t])
 
@@ -134,6 +144,4 @@ def main(root_path):
 
     
 if __name__ == "__main__":
-    main("/data/uabcvmsc/shared/newborn/40")     # Default path when run directly
-
-
+    main("/data/uabcvmsc/shared/newborn/")     # Default path when run directly
