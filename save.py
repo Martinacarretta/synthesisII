@@ -26,5 +26,19 @@ def copy_csv_files_with_structure(src_path, dest_path):
 
 # Example usage:
 source_directory = "/home/cvmsct05/temperatures_max_min"
-destination_directory = "/home/cvmsct05/t_save"
+destination_directory = "/home/cvmsct05/save"
 copy_csv_files_with_structure(source_directory, destination_directory)
+
+def delete_empty_folders(root_dir): #delete the valid points and valid detection folders
+    root_dir = os.path.abspath(root_dir)
+
+    # Traverse from bottom to top so that parent folders are checked after children
+    for dirpath, dirnames, filenames in os.walk(root_dir, topdown=False):
+        if not dirnames and not filenames:
+            try:
+                os.rmdir(dirpath)
+                print(f"Deleted empty folder: {dirpath}")
+            except OSError as e:
+                print(f"Failed to delete {dirpath}: {e}")
+                
+delete_empty_folders(destination_directory)

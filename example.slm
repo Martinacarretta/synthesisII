@@ -1,0 +1,38 @@
+#!/bin/bash
+#SBATCH -J example           # Job name
+#SBATCH -e example.err        # Error file
+#SBATCH -o example.out        # Output file
+#SBATCH -p gpu                      # Use GPU partition
+#SBATCH -N 1                        # Request 1 full node
+#SBATCH -n 1                        # Request 1 task
+#SBATCH --gpus=1                    # Request 1 GPU                                    
+#SBATCH --cpus-per-task=32           # 32 CPUs (allocated automatically per GPU)      
+#SBATCH --mem=80G                    # Request 80GB RAM                               
+#SBATCH -t 0-02:00                   # Set time limit to 2 hours
+
+module load conda
+
+# Input and output files
+INPUT_FILE=keypoints.py
+OUTPUT_FILE=keypoints.log
+
+# Move input to scratch
+cp -r ${SLURM_SUBMIT_DIR}/${INPUT_FILE} ${SCRATCH}
+cd ${SCRATCH}
+
+# Activate Conda environment
+# source ~/.bashrc
+conda activate sepsis || { echo "Failed to activate Conda env"; exit 1; }
+
+# Print GPU Info
+echo "🔍 GPU Info:"
+nvidia-smi
+
+# Run the Python script
+srun python ${INPUT_FILE} > ${OUTPUT_FILE} 2>&1
+
+# Copy output back to submission directory
+cp ${OUTPUT_FILE} ${SLURM_SUBMIT_DIR}
+
+echo "✅ Job finished successfully!"
+
