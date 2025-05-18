@@ -17,7 +17,7 @@ def diagnose(core, avg_limbs):
     if pd.isna(avg_limbs):
         if core >= 37.5:
             return "Fever"
-        elif core < 36.0:
+        elif core < 35.0:
             return "Hypothermia"
         else:
             return "Normal"
@@ -26,7 +26,7 @@ def diagnose(core, avg_limbs):
             if core - avg_limbs > 2.5:
                 return "Fever and Peripheral shutdown"
             return "Fever"
-        elif core < 36.0:
+        elif core < 35.0:
             if core - avg_limbs > 2.5:
                 return "Hypothermia and Peripheral shutdown"
             return "Hypothermia"
@@ -42,9 +42,9 @@ def process_csv(input_csv_path, output_base="/home/cvmsct05/output/"):
 
     # Rename last 5 columns for clarity (if they’re unnamed)
     temp_cols = df.columns[-5:]
-    df = df.rename(columns={temp_cols[0]: 'core', 
-                            temp_cols[1]: 'left_hand', temp_cols[2]: 'right_hand', 
-                            temp_cols[3]: 'left_foot', temp_cols[4]: 'right_foot'})
+    df = df.rename(columns={temp_cols[4]: 'core', 
+                            temp_cols[0]: 'left_hand', temp_cols[1]: 'right_hand', 
+                            temp_cols[2]: 'left_foot', temp_cols[3]: 'right_foot'})
     
     output_rows = []
 
@@ -113,15 +113,15 @@ def traverse_and_process(path):
                     full_path = os.path.join(root, file)
                     process_csv(full_path)
 
-def main (input_path): #nomes he fet aquesta funcio perq aixi puc 
+def main (input_path): #nomes he fet aquesta funcio perq aixi puc copiar els paths
     traverse_and_process(input_path)
     
 # Example usage
 if __name__ == "__main__":
-    main("/home/cvmsct05/temperatures_max_min/36")
-    main("/home/cvmsct05/temperatures_max_min/35")
-    main("/home/cvmsct05/temperatures_max_min/34")
-    main("/home/cvmsct05/temperatures_max_min/33")
-    main("/home/cvmsct05/temperatures_max_min/32")
+    """
+    main("/home/cvmsct05/temperatures_max_min")
+    """     
     main("/home/cvmsct05/temperatures_max_min/31")
-    main("/home/cvmsct05/temperatures_max_min/30")
+    main("/home/cvmsct05/temperatures_max_min/34")
+    main("/home/cvmsct05/temperatures_max_min/43")
+    main("/home/cvmsct05/temperatures_max_min/46")

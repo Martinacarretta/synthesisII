@@ -7,9 +7,22 @@ from PIL import Image, ImageDraw
 import math
 
 
-####################################### STEP 1: return path of image, min temp, max temp #######################################
+############################################################################ FILE PROCESSING ############################################################################
 
-def read_file_line (line):
+def folder_subfolder_or_csv(path): # gets the correct CSV
+    if os.path.isfile(path) and path.endswith(".csv"):
+        return [path]
+    elif os.path.isdir(path):
+        csv_files = []
+        for root, dirs, files in os.walk(path):
+            for file in files:
+                if file.endswith(".csv"):
+                    csv_files.append(os.path.join(root, file))
+        return csv_files
+    else:
+        raise ValueError(f"Path '{path}' is not a valid file or directory")
+    
+def get_parts (line):
     # Split the line by commas and strip whitespace
     parts = line.strip().split(',')
     
@@ -21,22 +34,21 @@ def read_file_line (line):
         mint = float(parts[3].strip())
         
         #extract keypoints we want the temp of
-        keypoints = [(parts[59].strip(), parts[60].strip()),   # Point 11 (X_11, Y_11)
-                            (parts[64].strip(), parts[65].strip()),   # Point 12 (X_12, Y_12)
-                            (parts[74].strip(), parts[75].strip()),   # Point 15 (X_15, Y_15)
-                            (parts[79].strip(), parts[80].strip()),   # Point 16 (X_16, Y_16)
-                            (parts[114].strip(), parts[115].strip()), # Point 23 (X_23, Y_23)
-                            (parts[119].strip(), parts[120].strip()), # Point 24 (X_24, Y_24)
-                            (parts[134].strip(), parts[135].strip()), # Point 27 (X_27, Y_27)
-                            (parts[139].strip(), parts[140].strip())  # Point 28 (X_28, Y_28)
-                            ]
+        keypoints = [
+            (parts[-10].strip(), parts[-9].strip()), 
+            (parts[-8].strip(), parts[-7].strip()), 
+            (parts[-6].strip(), parts[-5].strip()), 
+            (parts[-4].strip(), parts[-3].strip()),
+            (parts[-2].strip(), parts[-1].strip()),
+        ]
         
         return process, path, mint, maxt, keypoints
     else: 
         return process, None, None, None, None
     
+    
 
-####################################### STEP 2: convert to grayscale ##############################################################################
+############################################################################ CONVERT TO GRAYSCALE ############################################################################
 
 def normalize(value, min_val, max_val, new_min, new_max):
     return new_min + (value - min_val) * (new_max - new_min) / (max_val - min_val)
@@ -122,8 +134,7 @@ def color_to_temp_to_grayscale(image, newborn_id, max_temp, min_temp):
     
     return grayscale_image
 
-
-####################################### STEP 3: check the temperatures of the keypoints #########################################################
+############################################################################ CHECK TEMP IN KEYPOINTS ############################################################################
 
 def map_normal_to_cropped(baby_ID, x, y, normal_width, normal_height, normalized=True):
     if x == None or y == None:
@@ -186,7 +197,7 @@ def map_normal_to_cropped(baby_ID, x, y, normal_width, normal_height, normalized
 
     return x4, y4
 
-def check_temperatures(path, newborn_id, max_temp, min_temp, keypoints):
+def grayscale_image_creation (path, newborn_id, max_temp, min_temp):
     try:
         pil_image = Image.open(path) #thermal
         image = pil_image.convert("RGB")
@@ -194,40 +205,59 @@ def check_temperatures(path, newborn_id, max_temp, min_temp, keypoints):
         image = np.array(image)
     except Exception as e:
         print(f"Error loading image {path}: {str(e)}")
-        return [float('nan')] * len(keypoints)
+        return None
     
     grayscale_image = color_to_temp_to_grayscale(image, newborn_id, max_temp, min_temp) # RGB --> grayscale (with temperature mapping)
+
+    return grayscale_image
+
+def get_temperature_at_point (coord, grayscale_image, min_temp, max_temp):
     h, w = grayscale_image.shape[:2] #to know if keypoints are in the image
+    if coord is None or None in coord:
+        return float('nan')
+
+    x, y = coord
+    if 0 <= x < w and 0 <= y < h:
+        value = grayscale_image[int(round(y)), int(round(x))]
+        return normalize(value, 0, 255, min_temp, max_temp)
+    else:
+        return float('nan')
+
+def check_temperatures(path, newborn_id, max_temp, min_temp, keypoints):
+    grayscale_image = grayscale_image_creation (path, newborn_id, max_temp, min_temp)
+    if grayscale_image is None:
+        return [float('nan')] * len(keypoints)
     
     #get grayscale values at the selected points
-    pixel_values = []
-    for mapped_kp in keypoints:
-        if mapped_kp is None or None in mapped_kp:  # Check if either x or y is None
-            pixel_values.append(float('nan'))
-            continue
-            
-        x, y = mapped_kp
-        if x is not None and y is not None and 0 <= x < w and 0 <= y < h:
-            pixel_values.append(grayscale_image[int(round(y)), int(round(x))]) # Ensure integer indices
-        else:
-            pixel_values.append(float('nan'))
-        
-    # get temperatures by normalizing the value from grayscale to the temperature range
-    temperatures = [normalize(value, 0, 255, min_temp, max_temp) if not math.isnan(value) else float('nan') for value in pixel_values]        
-    
+    temperatures = Parallel(n_jobs=-1)(
+        delayed(get_temperature_at_point)(kp, grayscale_image, min_temp, max_temp)
+        for kp in keypoints
+    )
+
     return temperatures
-    
-        
-######################################################################### MAIN ############################################################################
+
+def window(pixel, path, newborn_id, maxt, mint):
+    side = 5
+    x_center, y_center = pixel
+
+    coords = [(x_center + dx, y_center + dy) for dx in range(-side, side + 1) for dy in range(-side, side + 1)]
+
+    temps = check_temperatures(path, newborn_id, maxt, mint, coords)
+    results = list(zip(coords, temps))
+
+    max_coord, _ = max(results, key=lambda x: x[1])
+    return max_coord
+
+############################################################################ PRE MAIN ############################################################################
 
 def process_line(line, i):
     print(i)
     # read the path, min temp and max temp
-    process, path, mint, maxt, keypoints = read_file_line(line)
+    process, path, mint, maxt, keypoints = get_parts(line)
     
     if process == "True":
         newborn_id = path.split('/')[5]
-        #print(newborn_id)
+        
         # -------- LOAD IMAGES -------- #
         base_path, ext = os.path.splitext(path)
 
@@ -238,61 +268,78 @@ def process_line(line, i):
         
         vis_path = possible_vis_paths[0] if os.path.exists(possible_vis_paths[0]) else possible_vis_paths[1]
         normal_img = Image.open(vis_path)
-        thermal_img = Image.open(path)
         
         normal_width, normal_height = normal_img.size
 
-        # -------- PROCESS -------- #
+        # ------------ PROCESS ------------ #
         # Convert keypoints to ints (they are strings)
-        keypoints = [(int(x), int(y)) if x is not None and y is not None else (None, None) for x, y in keypoints]        
-        #print(keypoints)
+        keypoints = [(int(x), int(y)) if x not in (None, 'None') and y not in (None, 'None') else (None, None) for x, y in keypoints]
+
         mapped_keypoints = [map_normal_to_cropped(newborn_id, x, y, normal_width, normal_height, False) for x, y in keypoints]
-        #mapped_keypoints = [map_normal_to_cropped(newborn_id, x, y, normal_width, normal_height, False) if x is not None and y is not None else (None, None) for x, y in keypoints]
-        #print(mapped_keypoints)
+        
+        # ------------ WINDOW ------------ #
+        if (mapped_keypoints[0] != (None, None)):
+            # if the keypoint is different from none and none, i should check the temperatures of the pixels of a window of 7 pixels
+            pixel = mapped_keypoints[0] 
+            x_updated, y_updated = window(pixel, path, newborn_id, maxt, mint)
+            mapped_keypoints.append((x_updated, y_updated)) #add the updated torso to get the temperatures
+            to_add = x_updated #updated torso
+            to_add2 = y_updated
+        else:
+            mapped_keypoints.append((None, None)) #add the updated torso to get the temperatures
+            to_add = None #updated torso
+            to_add2 = None #updated torso
 
         temperatures = check_temperatures(path, newborn_id, maxt, mint, mapped_keypoints)
-        #print(temperatures)
-        print("------------------------------------------------------------------------")
+        temperatures.insert(0, to_add) #updated torso
+        temperatures.insert(1, to_add2) #updated torso
+        # print("------------------------------------------------------------------------")
 
+        # Discard temperature if too high:
+        temperatures_thresholded = temperatures[:2] + [
+            t if isinstance(t, (int, float)) and not math.isnan(t) and 30 < t < 45 else float('nan')
+            for t in temperatures[2:]
+        ]
+
+        
         # -------- UPDATE CSV LINE -------- #
-        temp_str = ",".join([f"{t:.2f}" for t in temperatures])
+        temp_str = ",".join(
+            [str(t) for t in temperatures_thresholded[:2]] +
+            [f"{t:.2f}" if isinstance(t, (float, int)) and not isinstance(t, str) else "nan" for t in temperatures_thresholded[2:]]
+        )
         new_line = line.strip() + "," + temp_str + "\n"
     else:
         new_line = line
         
     return (i, new_line)  # Return both index and processed line
 
-def resolve_csv_paths(path):
-    if os.path.isfile(path) and path.endswith(".csv"):
-        return [path]
-    elif os.path.isdir(path):
-        csv_files = []
-        for root, dirs, files in os.walk(path):
-            for file in files:
-                if file.endswith(".csv"):
-                    csv_files.append(os.path.join(root, file))
-        return csv_files
-    else:
-        raise ValueError(f"Path '{path}' is not a valid file or directory")
+############################################################################ MAIN ############################################################################
 
 def main(path):
-    filepaths = resolve_csv_paths(path)
-    
+    filepaths = folder_subfolder_or_csv(path)
+    added_fields_header = ["torso_updated_x", "torso_updated_y", "torso_temp", "left_hand_temp", "right_hand_temp", "left_foot_temp", "right_foot_temp", "torso_updated_temp"]
+
     for filepath in filepaths:
         with open(filepath, 'r') as file:
             lines = file.readlines()
 
         header = lines[0].strip()
-        if not any(field in header for field in ["core_temp", "arm1_temp", "arm2_temp", "leg1_temp", "leg2_temp"]):
-            header = header + ",core_temp,arm1_temp,arm2_temp,leg1_temp,leg2_temp"
+        
+         # Skip this file if all required fields are already present
+        if all(field in header for field in added_fields_header):
+            print(f"⏭️ Skipping {filepath} (already processed)")
+            continue
+        
+        #new header
+        header = header + "," + ",".join(field for field in added_fields_header if field not in header)
         updated_lines = [header + "\n"]
 
         # Process lines in parallel (skip header)
-        results = Parallel(n_jobs=-1) (
+        results = Parallel(n_jobs=4) (
             delayed(process_line)(line, i) 
             for i, line in enumerate(lines[1:], 1))
 
-        # Sort results by original index and extract just the lines
+        # Sort results by original index and extract just the lines (SINCE WE ARE PARALLELIZING)
         results_sorted = [line for i, line in sorted(results, key=lambda x: x[0])]
         updated_lines.extend(results_sorted)
             
@@ -303,6 +350,4 @@ def main(path):
         print(f"✅ Results saved to {filepath}")
 
 if __name__ == "__main__":
-    main("/home/cvmsct05/temperatures_max_min")
-    
-#"/home/cvmsct05/temperatures_max_min/29/20.08.24/20.08.24.csv"
+    main("/home/cvmsct05/temperatures_max_min/46")

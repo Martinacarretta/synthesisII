@@ -86,7 +86,7 @@ False,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206031032.jpeg,,,,,,,,
 True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206031134.jpeg,38.74,38.74,,34.12,,36.43,2.31,Fever
 True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206031236.jpeg,38.64,38.64,,34.02,,36.33,2.31,Fever
 True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206031338.jpeg,38.44,38.44,,33.89,33.89,35.41,3.03,Fever and Peripheral shutdown
-True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206031439.jpeg,35.39,,,34.65,,34.65,0.74,Hypothermia
+True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206031439.jpeg,35.39,,,34.65,,34.65,0.74,Normal
 True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206031541.jpeg,38.65,,,34.16,34.16,34.16,4.49,Fever and Peripheral shutdown
 True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206031643.jpeg,38.65,,,34.83,34.83,34.83,3.82,Fever and Peripheral shutdown
 False,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206031744.jpeg,,,,,,,,
@@ -99,8 +99,8 @@ False,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206032354.jpeg,,,,,,,,
 True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206032455.jpeg,36.0,36.69,,33.89,,35.29,0.71,Normal
 True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206032557.jpeg,36.14,36.82,,34.06,,35.44,0.7,Normal
 True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206032658.jpeg,36.72,36.72,,33.96,,35.34,1.38,Normal
-True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206032800.jpeg,35.54,36.92,,34.16,,35.54,0.0,Hypothermia
-True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206032902.jpeg,35.44,37.17,,34.06,,35.62,-0.18,Hypothermia
+True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206032800.jpeg,35.54,36.92,,34.16,,35.54,0.0,Normal
+True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206032902.jpeg,35.44,37.17,,34.06,,35.62,-0.18,Normal
 True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206033003.jpeg,36.75,36.75,,34.03,,35.39,1.36,Normal
 True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206033105.jpeg,38.44,36.69,,34.6,,35.64,2.8,Fever and Peripheral shutdown
 True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206033207.jpeg,38.44,37.04,,33.89,,35.47,2.97,Fever and Peripheral shutdown
@@ -177,7 +177,7 @@ True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206044415.jpeg,38.27,37.83
 True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206044517.jpeg,38.67,38.67,,,,38.67,0.0,Fever
 True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206044619.jpeg,38.59,,35.73,,,35.73,2.86,Fever and Peripheral shutdown
 True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206044721.jpeg,38.78,38.78,,,,38.78,0.0,Fever
-True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206044823.jpeg,35.49,38.73,,,,38.73,-3.24,Hypothermia
+True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206044823.jpeg,35.49,38.73,,,,38.73,-3.24,Normal
 True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206044924.jpeg,38.65,36.92,,34.16,,35.54,3.11,Fever and Peripheral shutdown
 False,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206045026.jpeg,,,,,,,,
 True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206045128.jpeg,38.65,34.83,,,,34.83,3.82,Fever and Peripheral shutdown
@@ -263,7 +263,7 @@ False,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206061246.jpeg,,,,,,,,
 False,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206061347.jpeg,,,,,,,,
 False,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206061449.jpeg,,,,,,,,
 True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206061550.jpeg,38.55,,,,,,,Fever
-True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206061652.jpeg,35.28,,,34.38,33.49,33.94,1.34,Hypothermia
+True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206061652.jpeg,35.28,,,34.38,33.49,33.94,1.34,Normal
 False,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206061754.jpeg,,,,,,,,
 False,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206061855.jpeg,,,,,,,,
 False,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206061957.jpeg,,,,,,,,
@@ -272,7 +272,7 @@ True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206062201.jpeg,38.53,,32.5
 False,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206062304.jpeg,,,,,,,,
 True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206062406.jpeg,38.52,,,,,,,Fever
 True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206062507.jpeg,38.34,36.52,,,,36.52,1.82,Fever
-True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206062609.jpeg,35.12,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206062609.jpeg,35.12,,,,,,,Normal
 True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206062710.jpeg,38.13,,,,,,,Fever
 True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206062812.jpeg,38.14,,,,,,,Fever
 True,/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206062914.jpeg,38.24,,,,,,,Fever

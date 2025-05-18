@@ -1,7 +1,7 @@
 Process,Image Path,core,left_hand,right_hand,left_foot,right_foot,limbs_avg,core_minus_limbs,diagnosis
 False,/data/uabcvmsc/shared/newborn/37/01.10.24/HM20010107134316.jpeg,,,,,,,,
 True,/data/uabcvmsc/shared/newborn/37/01.10.24/HM20010107134417.jpeg,38.31,,,32.94,36.37,34.66,3.65,Fever and Peripheral shutdown
-True,/data/uabcvmsc/shared/newborn/37/01.10.24/HM20010107134519.jpeg,35.67,31.39,,,,31.39,4.28,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/37/01.10.24/HM20010107134519.jpeg,35.67,31.39,,,,31.39,4.28,Peripheral shutdown
 False,/data/uabcvmsc/shared/newborn/37/01.10.24/HM20010107134620.jpeg,,,,,,,,
 False,/data/uabcvmsc/shared/newborn/37/01.10.24/HM20010107134721.jpeg,,,,,,,,
 False,/data/uabcvmsc/shared/newborn/37/01.10.24/HM20010107134822.jpeg,,,,,,,,
@@ -336,7 +336,7 @@ True,/data/uabcvmsc/shared/newborn/37/01.10.24/HM20010107192309.jpeg,37.33,,,,31
 False,/data/uabcvmsc/shared/newborn/37/01.10.24/HM20010107192410.jpeg,,,,,,,,
 False,/data/uabcvmsc/shared/newborn/37/01.10.24/HM20010107192512.jpeg,,,,,,,,
 True,/data/uabcvmsc/shared/newborn/37/01.10.24/HM20010107192613.jpeg,37.57,,,,,,,Fever
-True,/data/uabcvmsc/shared/newborn/37/01.10.24/HM20010107192714.jpeg,35.77,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/37/01.10.24/HM20010107192714.jpeg,35.77,,,,,,,Normal
 True,/data/uabcvmsc/shared/newborn/37/01.10.24/HM20010107192815.jpeg,37.81,37.81,,36.03,,36.92,0.89,Fever
 True,/data/uabcvmsc/shared/newborn/37/01.10.24/HM20010107192917.jpeg,37.86,,,,,,,Fever
 True,/data/uabcvmsc/shared/newborn/37/01.10.24/HM20010107193018.jpeg,37.67,,,,,,,Fever

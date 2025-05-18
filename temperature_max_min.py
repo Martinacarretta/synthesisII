@@ -35,7 +35,7 @@ def all_images (path, plot=True):
     image = cv2.imread(path)
     if image is None:
         print(f"Error loading image: {path}")
-        return
+        return None, None
       
     if image.shape[1] > image.shape[0]: #landscape
         u = [15, 139, 70, 33]
@@ -94,7 +94,7 @@ def process_folder (folder_path):
             max_t, min_t = all_images(path)
             
             if max_t is not None:
-                if max_t < 33:
+                if max_t < 33 or max_t > 50:
                     process = False
                 else:
                     process = True
@@ -144,4 +144,4 @@ def main(root_path):
 
     
 if __name__ == "__main__":
-    main("/data/uabcvmsc/shared/newborn/")     # Default path when run directly
+    main("/data/uabcvmsc/shared/newborn/38")     # Default path when run directlyk
