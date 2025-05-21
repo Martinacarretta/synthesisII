@@ -58,16 +58,23 @@ Flag images with: Extreme ΔT values, fever, or hhypothermia
 
 ## Useful directories:
 [Save](save) is a backup of only the csv with the paths, min max temperatures and the keypoints
+
 [diagnosis](diagnosis) is a folder of csv with the temperatures of the keypoints and the outputs given the assigned thresholds. 
+
 [joint](joint_csv) is a folder with ony a csv per baby with all the paths, and temperatures detected. 
 
 
 ## Other used python scripts:
 [check](others/check.py) checks if two csvs have the same content.
+
 [draw](others/draw.py) draws different sized windows to see how to do the average window and the maximum window (used for temeprature extracting)
+
 [find](others/find.py) finds the path of a file given the last part of the path and extension of the file 
+
 [gif](others/gif.py) generates a gif of images with their corresponding temperature given a csv path
+
 [move images](others/move_images.py) moves imgaes to another folder
+
 [save](others/save.py) creates a backup of the provided directory
  
 ## Notes:
