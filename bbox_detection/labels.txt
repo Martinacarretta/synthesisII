@@ -1,6 +1,0 @@
-baby
-core
-arm
-leg
-hand
-foot

@@ -2,95 +2,17 @@ import os
 import pandas as pd
 import matplotlib.pyplot as plt
 from datetime import datetime
-
-"""
-def process_csv (input_csv_path, output_base="/home/cvmsct05/plots/"):
-    # Read the CSV
-    df = pd.read_csv(input_csv_path)
-    print(input_csv_path)
-    
-    parts = input_csv_path.strip("/").split("/")
-    baby_id = parts[-3]
-    date = parts[-2]
-        
-    temp_columns = ['core', 'left_hand', 'right_hand', 'left_foot', 'right_foot']
-
-    # Extract timestamps from image paths
-    def extract_timestamp(path):
-        try:
-            filename = os.path.basename(path)
-            # Example: HM20240616163723.jpeg
-            ts_str = filename[2:16]  # Skip "HM", grab 14 characters
-            return datetime.strptime(ts_str, "%Y%m%d%H%M%S")
-        except:
-            #print("out of extract_timestamp")
-            return None
-
-    df['timestamp'] = df['Image Path'].apply(extract_timestamp)
-    # print(df)
-    df = df.dropna(subset=['timestamp'])
-
-    # Sort by timestamp
-    df = df.sort_values(by='timestamp')
-
-    # # Skip if no data to plot
-    # if df.empty:
-    #     print(f"⚠️ Skipped: No data to plot for {baby_id} on {date}")
-    #     return
-
-    # Plot
-    plt.figure(figsize=(12, 6))
-    for col in temp_columns:
-        if col in df.columns:
-            plt.plot(df['timestamp'], df[col], label=col, marker='o', markersize=4)
-
-    plt.title(f"Temperatures for Baby {baby_id} on {date}")
-    plt.xlabel("Time")
-    plt.ylabel("Temperature")
-    plt.legend()
-    plt.xticks(rotation=45)
-    plt.tight_layout()    
-    
-    # Define relative path from known root, excluding the CSV filename
-    rel_dir = os.path.dirname(input_csv_path).replace("/home/cvmsct05/temperatures_max_min/", "")
-    output_dir = os.path.join(output_base, rel_dir)
-    os.makedirs(output_dir, exist_ok=True)
-
-    # Save plot in that directory
-    output_path = os.path.join(output_dir, f"{date}.png")
-    plt.savefig(output_path)
-
-    plt.close()
-
-    print(f"✅ Results saved to {output_path}")
-
-        
-def main (input_path):
-    if input_path.endswith(".csv"):
-        process_csv(input_path)
-    else:
-        for root, _, files in os.walk(input_path):
-            for file in files:
-                if file.endswith(".csv"):
-                    full_path = os.path.join(root, file)
-                    process_csv(full_path)
-                    
-if __name__ == "__main__":
-    main("/home/cvmsct05/output")
-    
-    
-"""
-
-import os
-import pandas as pd
-import matplotlib.pyplot as plt
-from datetime import datetime
 from collections import defaultdict
 
 # Global store for combining data by baby
+fever = {
+    36: 20240924180000, 
+    47: 20241128050000,
+    48: 20241124183000
+}
 baby_data = defaultdict(list)
 
-def process_csv(input_csv_path, output_base="/home/cvmsct05/output/"):
+def process_csv(input_csv_path, output_base="/home/cvmsct05/diagnosis/"):
     # Read the CSV
     df = pd.read_csv(input_csv_path)
     print(input_csv_path)
@@ -166,7 +88,7 @@ def process_csv(input_csv_path, output_base="/home/cvmsct05/output/"):
     print(f"✅ Results saved to {output_dir}")
 
 
-def plot_per_baby(output_base="/home/cvmsct05/output/"):
+def plot_per_baby(output_base="/home/cvmsct05/diagnosis/"):
     temp_columns = ['core', 'left_hand', 'right_hand', 'left_foot', 'right_foot']
 
     for baby_id, df_list in baby_data.items():
@@ -186,6 +108,11 @@ def plot_per_baby(output_base="/home/cvmsct05/output/"):
         plt.title(f"Temperatures for Baby {baby_id} (All Dates)")
         plt.xlabel("Time")
         plt.ylabel("Temperature")
+        fever_timestamp = fever.get(int(baby_id))
+        if fever_timestamp:
+            fever_dt = datetime.strptime(str(fever_timestamp), "%Y%m%d%H%M%S")
+            plt.axvline(x=fever_dt, color='red', linestyle='--', label='Fever')
+
         plt.legend()
         plt.xticks(rotation=45)
         plt.tight_layout()
@@ -211,6 +138,11 @@ def plot_per_baby(output_base="/home/cvmsct05/output/"):
                 plt.title(f"{col.capitalize()} Temperature for Baby {baby_id} (All Dates)")
                 plt.xlabel("Time")
                 plt.ylabel("Temperature")
+                fever_timestamp = fever.get(int(baby_id))
+                if fever_timestamp:
+                    fever_dt = datetime.strptime(str(fever_timestamp), "%Y%m%d%H%M%S")
+                    plt.axvline(x=fever_dt, color='red', linestyle='--', label='Fever')
+
                 plt.legend()
                 plt.xticks(rotation=45)
                 plt.tight_layout()
@@ -232,12 +164,13 @@ def main(input_path):
                     process_csv(full_path)
 
     plot_per_baby()
+    baby_data.clear()  # 🔁 Reset after each baby's folder is processed
+    
 
 
 if __name__ == "__main__":
     ### ONLY PUT SUBFOLDERS OF BABIES, DO NOT PUT A WHOLE FOLDER OF NEWBORNS
-    main("/home/cvmsct05/output/31")
-    main("/home/cvmsct05/output/34")
-    main("/home/cvmsct05/output/43")
-    main("/home/cvmsct05/output/46")
+
+    main("/home/cvmsct05/diagnosis/55")
+
 

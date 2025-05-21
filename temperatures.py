@@ -211,6 +211,7 @@ def grayscale_image_creation (path, newborn_id, max_temp, min_temp):
 
     return grayscale_image
 
+############################################################################ WINDOW I ############################################################################
 def get_temperature_at_point (coord, grayscale_image, min_temp, max_temp):
     h, w = grayscale_image.shape[:2] #to know if keypoints are in the image
     if coord is None or None in coord:
@@ -236,17 +237,43 @@ def check_temperatures(path, newborn_id, max_temp, min_temp, keypoints):
 
     return temperatures
 
-def window(pixel, path, newborn_id, maxt, mint):
-    side = 5
+def window(pixel, path, newborn_id, maxt, mint): # TO COMPUTE HOTEST SPOT
+    side = 15 # 31x31 window
+    stride = 3 # get 121 pixels
     x_center, y_center = pixel
 
-    coords = [(x_center + dx, y_center + dy) for dx in range(-side, side + 1) for dy in range(-side, side + 1)]
-
+    coords = [(x_center + dx, y_center + dy)
+        for dx in range(-side, side + 1, stride)
+        for dy in range(-side, side + 1, stride)
+    ]
     temps = check_temperatures(path, newborn_id, maxt, mint, coords)
     results = list(zip(coords, temps))
 
     max_coord, _ = max(results, key=lambda x: x[1])
     return max_coord
+
+############################################################################ WINDOW II ############################################################################
+
+def average_temp_around_pixel(center_pixel, path, newborn_id, maxt, mint):
+    if center_pixel is None:
+        return float('nan')
+    
+    side = 5  # 11x11window
+    x_center, y_center = center_pixel
+    
+    if x_center is None or y_center is None:
+        return float('nan')
+
+    coords = [(x_center + dx, y_center + dy) for dx in range(-side, side + 1) for dy in range(-side, side + 1)]
+    temps = check_temperatures(path, newborn_id, maxt, mint, coords)
+
+    valid_temps = [t for t in temps if not math.isnan(t)]
+    if not valid_temps:
+        return float('nan')
+
+    avg_temp = sum(valid_temps) / len(valid_temps)
+    return avg_temp
+
 
 ############################################################################ PRE MAIN ############################################################################
 
@@ -254,7 +281,7 @@ def process_line(line, i):
     print(i)
     # read the path, min temp and max temp
     process, path, mint, maxt, keypoints = get_parts(line)
-    
+    print(path)
     if process == "True":
         newborn_id = path.split('/')[5]
         
@@ -278,29 +305,30 @@ def process_line(line, i):
         mapped_keypoints = [map_normal_to_cropped(newborn_id, x, y, normal_width, normal_height, False) for x, y in keypoints]
         
         # ------------ WINDOW ------------ #
+        # first get the highest temperature pixel for the torso
         if (mapped_keypoints[0] != (None, None)):
-            # if the keypoint is different from none and none, i should check the temperatures of the pixels of a window of 7 pixels
+            # if the keypoint is different from none and none, i should check the temperatures of the pixels of a window
             pixel = mapped_keypoints[0] 
             x_updated, y_updated = window(pixel, path, newborn_id, maxt, mint)
             mapped_keypoints.append((x_updated, y_updated)) #add the updated torso to get the temperatures
-            to_add = x_updated #updated torso
-            to_add2 = y_updated
         else:
             mapped_keypoints.append((None, None)) #add the updated torso to get the temperatures
-            to_add = None #updated torso
-            to_add2 = None #updated torso
-
-        temperatures = check_temperatures(path, newborn_id, maxt, mint, mapped_keypoints)
-        temperatures.insert(0, to_add) #updated torso
-        temperatures.insert(1, to_add2) #updated torso
+            x_updated = None #updated torso
+            y_updated = None #updated torso
+        
+        #get the average temperature of a window for each keypint
+        temperatures = [average_temp_around_pixel(coord, path, newborn_id, maxt, mint) for coord in mapped_keypoints]
+        # temperatures = check_temperatures(path, newborn_id, maxt, mint, mapped_keypoints)
+        
+        temperatures.insert(0, x_updated) #updated torso
+        temperatures.insert(1, y_updated) #updated torso
         # print("------------------------------------------------------------------------")
 
         # Discard temperature if too high:
         temperatures_thresholded = temperatures[:2] + [
             t if isinstance(t, (int, float)) and not math.isnan(t) and 30 < t < 45 else float('nan')
-            for t in temperatures[2:]
+            for t in temperatures[2:] #start from the third element (first two are updated torso)
         ]
-
         
         # -------- UPDATE CSV LINE -------- #
         temp_str = ",".join(
@@ -350,4 +378,5 @@ def main(path):
         print(f"✅ Results saved to {filepath}")
 
 if __name__ == "__main__":
-    main("/home/cvmsct05/temperatures_max_min/46")
+    #s'esta fent aquests junst
+    main("/home/cvmsct05/temperatures_max_min/47")

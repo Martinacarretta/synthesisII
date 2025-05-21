@@ -1,0 +1,32 @@
+Process,Image Path,core,left_hand,right_hand,left_foot,right_foot,limbs_avg,core_minus_limbs,diagnosis
+True,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906062948.jpeg,40.84,40.56,,,,40.56,0.28,Fever
+True,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906063049.jpeg,40.85,,,,,,,Fever
+True,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906063151.jpeg,40.85,40.01,,,,40.01,0.84,Fever
+True,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906063252.jpeg,,,,,,,,No core temperature
+True,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906063353.jpeg,40.79,,40.49,,,40.49,0.3,Fever
+False,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906063455.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906063556.jpeg,40.2,,,,,,,Fever
+False,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906063657.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906063758.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906063900.jpeg,40.67,,40.26,,,40.26,0.41,Fever
+True,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906064001.jpeg,40.84,,40.49,,,40.49,0.35,Fever
+True,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906064102.jpeg,41.02,,40.24,,,40.24,0.78,Fever
+True,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906064203.jpeg,41.2,,40.53,,,40.53,0.67,Fever
+True,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906064304.jpeg,41.3,,40.87,,,40.87,0.43,Fever
+True,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906064406.jpeg,41.32,,41.21,,,41.21,0.11,Fever
+True,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906064507.jpeg,40.97,,40.94,,,40.94,0.03,Fever
+True,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906064608.jpeg,40.87,,40.23,,,40.23,0.64,Fever
+True,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906064710.jpeg,40.41,,39.51,,,39.51,0.9,Fever
+True,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906064811.jpeg,40.68,,40.21,,,40.21,0.47,Fever
+True,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906064912.jpeg,40.58,,39.95,,,39.95,0.63,Fever
+True,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906065013.jpeg,40.64,,40.64,,,40.64,0.0,Fever
+True,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906065115.jpeg,41.06,,41.06,,,41.06,0.0,Fever
+True,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906065216.jpeg,40.96,,40.48,,,40.48,0.48,Fever
+True,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906065317.jpeg,40.86,,40.85,,,40.85,0.01,Fever
+True,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906065418.jpeg,40.85,,40.74,,,40.74,0.11,Fever
+True,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906065520.jpeg,40.93,,40.93,,,40.93,0.0,Fever
+True,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906065621.jpeg,41.04,,40.97,,,40.97,0.07,Fever
+True,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906065722.jpeg,40.75,,40.28,,,40.28,0.47,Fever
+True,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906065823.jpeg,41.05,,41.05,,,41.05,0.0,Fever
+True,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906065925.jpeg,41.06,,,,,,,Fever
+True,/data/uabcvmsc/shared/newborn/32/06.09.24/HM20240906070026.jpeg,40.64,,40.64,,,40.64,0.0,Fever

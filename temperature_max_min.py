@@ -144,4 +144,4 @@ def main(root_path):
 
     
 if __name__ == "__main__":
-    main("/data/uabcvmsc/shared/newborn/38")     # Default path when run directlyk
+    main("/data/uabcvmsc/shared/newborn/49")     # Default path when run directlyk

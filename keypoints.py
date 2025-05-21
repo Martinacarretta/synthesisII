@@ -68,7 +68,15 @@ def process_folder(folder_path, output_subfolder):
     csv_file = csv_files[0]
     csv_file = os.path.join(output_subfolder, csv_file)
 
-    #create headers for the keypoints
+    with open(csv_file, 'r', newline='') as f:
+        reader = csv.reader(f)
+        headers = next(reader)
+        if "X_0" in headers:
+            print(f"Keypoint data already present in {csv_file}. Skipping folder {folder_path}.")
+            return
+
+    
+    # create headers for the keypoints
     max_landmarks = 33  
     keypoint_headers = [f"{coord}_{i}" for i in range(max_landmarks) for coord in ["X", "Y", "Z", "Vis", "Pres"]]
     
@@ -91,7 +99,6 @@ def process_folder(folder_path, output_subfolder):
     if "X_0" not in headers:
         headers.extend(keypoint_headers)
 
-    # image_paths = image_paths[:4]  ##################################
 
     # Process each image
     for image_path in image_paths:
@@ -163,9 +170,8 @@ def process_folder(folder_path, output_subfolder):
 
 
 # Define input and output directories
-input_folder = r"/data/uabcvmsc/shared/newborn/45"
-output_root = r"/home/cvmsct05/temperatures_max_min/45"
-
+input_folder = r"/data/uabcvmsc/shared/newborn/49"
+output_root = r"/home/cvmsct05/temperatures_max_min/49"
 
 os.makedirs(output_root, exist_ok=True)
 
@@ -175,6 +181,11 @@ for root, dirs, files in os.walk(input_folder):
         rel_path = os.path.relpath(root, input_folder)
         output_folder = os.path.join(output_root, rel_path)
         # os.makedirs(output_folder, exist_ok=True)
+        # Check if corresponding folder exists in temperatures_max_min
+        if not os.path.exists(output_folder):
+            print(f"Skipping {root} because corresponding folder does not exist in temperatures_max_min")
+            continue
+
         process_folder(root, output_folder)
 
-print(f"Processing complete. Results saved in {output_root}")
+print(f"✅ Processing keypoints complete. Results saved in {output_root}")
