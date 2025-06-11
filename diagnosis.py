@@ -50,6 +50,7 @@ def process_csv(input_csv_path, output_base="/home/cvmsct05/diagnosis/"):
     except Exception as e:
         print(f"❌ Unexpected error in file {input_csv_path}: {e}")
         return
+    
     # Rename last 5 columns for clarity (if they’re unnamed)
     temp_cols = df.columns[-5:]
     df = df.rename(columns={temp_cols[4]: 'core', 
@@ -58,7 +59,7 @@ def process_csv(input_csv_path, output_base="/home/cvmsct05/diagnosis/"):
     
     output_rows = []
 
-
+    # Read and process each row
     for _, row in df.iterrows():
         process_val = row["Process"]
         img_path = row["Image Path"]
@@ -73,7 +74,7 @@ def process_csv(input_csv_path, output_base="/home/cvmsct05/diagnosis/"):
         except (ValueError, TypeError):
             core = np.nan
 
-        if pd.isna(core):
+        if pd.isna(core): # If core temperature is missing
             output_rows.append([True, img_path] + [""] * 7 + ["No core temperature"])
             continue
 
@@ -93,6 +94,7 @@ def process_csv(input_csv_path, output_base="/home/cvmsct05/diagnosis/"):
         core_minus_limbs = core - limbs_avg if not np.isnan(limbs_avg) else np.nan
         diagnosis = diagnose(core, limbs_avg)
 
+        # Prepare the output row
         float_vals = [core] + limbs + [limbs_avg, core_minus_limbs]
         float_vals_rounded = [round(val, 2) if not np.isnan(val) else "" for val in float_vals]
 
@@ -114,6 +116,11 @@ def process_csv(input_csv_path, output_base="/home/cvmsct05/diagnosis/"):
     print(f"Saved: {output_path}")
 
 def traverse_and_process(path):
+    """
+    Traverse the directory and process all CSV files found.
+    If the path is a CSV file, it processes that file directly.
+    If the path is a directory, it processes all CSV files within that directory.
+    """
     if path.endswith(".csv"):
         process_csv(path)
     else:
@@ -123,11 +130,10 @@ def traverse_and_process(path):
                     full_path = os.path.join(root, file)
                     process_csv(full_path)
 
-def main (input_path): #nomes he fet aquesta funcio perq aixi puc copiar els paths
+def main (input_path): # Main function used to call the traverse_and_process function easily from the if __name__ == "__main__" block
     traverse_and_process(input_path)
     
 # Example usage
 if __name__ == "__main__":
     main("/home/cvmsct05/temperatures_max_min/46")
-  
     main("/home/cvmsct05/temperatures_max_min/55")

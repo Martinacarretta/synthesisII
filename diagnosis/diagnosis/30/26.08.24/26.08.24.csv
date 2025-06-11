@@ -1,0 +1,501 @@
+Process,Image Path,core,left_hand,right_hand,left_foot,right_foot,limbs_avg,core_minus_limbs,diagnosis
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826023527.jpeg,35.82,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826023630.jpeg,35.63,,34.24,,,34.24,1.39,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826023732.jpeg,33.77,30.88,34.82,,,32.85,0.92,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826023833.jpeg,34.0,,34.74,,,34.74,-0.74,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826023934.jpeg,36.09,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826024037.jpeg,35.66,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826024139.jpeg,35.82,34.53,34.42,34.42,,34.46,1.36,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826024241.jpeg,35.53,,34.13,,,34.13,1.4,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826024343.jpeg,34.47,31.68,,,,31.68,2.79,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826024446.jpeg,33.99,35.53,,,,35.53,-1.54,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826024548.jpeg,36.22,31.35,34.54,,,32.94,3.28,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826024650.jpeg,35.79,,34.32,,,34.32,1.47,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826024751.jpeg,35.63,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826024855.jpeg,35.91,34.3,34.46,,,34.38,1.53,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826024956.jpeg,36.1,35.33,,,,35.33,0.77,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826025059.jpeg,35.81,35.19,,,,35.19,0.62,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826025201.jpeg,35.33,34.62,,,,34.62,0.71,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826025304.jpeg,36.2,33.18,,,,33.18,3.02,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826025405.jpeg,35.93,32.56,34.54,,,33.55,2.38,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826025506.jpeg,36.0,31.31,34.5,,,32.9,3.1,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826025607.jpeg,35.73,,,,34.34,34.34,1.39,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826025710.jpeg,35.63,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826025812.jpeg,33.07,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826025913.jpeg,35.52,30.91,,,,30.91,4.61,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826030015.jpeg,35.9,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826030117.jpeg,35.24,32.85,,,,32.85,2.39,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826030218.jpeg,34.95,32.42,,,,32.42,2.53,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826030322.jpeg,35.71,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826030424.jpeg,35.22,30.98,34.74,,,32.86,2.36,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826030528.jpeg,35.12,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826030629.jpeg,35.22,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826030730.jpeg,35.6,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826030832.jpeg,35.59,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826030934.jpeg,35.61,,,,,,,Normal
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826031036.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826031137.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826031238.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826031340.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826031442.jpeg,35.61,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826031543.jpeg,35.42,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826031645.jpeg,35.52,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826031747.jpeg,35.32,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826031849.jpeg,35.6,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826031950.jpeg,35.22,,,,,,,Normal
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826032051.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826032152.jpeg,35.31,30.98,,,,30.98,4.33,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826032253.jpeg,35.4,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826032354.jpeg,35.4,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826032456.jpeg,35.48,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826032558.jpeg,35.4,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826032659.jpeg,35.51,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826032800.jpeg,35.49,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826032901.jpeg,35.5,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826033002.jpeg,35.22,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826033104.jpeg,35.22,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826033207.jpeg,33.68,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826033308.jpeg,35.42,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826033409.jpeg,35.41,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826033510.jpeg,35.42,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826033611.jpeg,35.71,31.38,,,,31.38,4.33,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826033712.jpeg,35.52,31.28,,,,31.28,4.24,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826033813.jpeg,35.52,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826033914.jpeg,35.8,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826034016.jpeg,35.89,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826034117.jpeg,35.78,,,,,,,Normal
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826034219.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826034320.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826034421.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826034522.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826034624.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826034726.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826034827.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826034929.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826035030.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826035132.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826035234.jpeg,35.49,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826035335.jpeg,33.78,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826035437.jpeg,34.44,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826035539.jpeg,33.52,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826035640.jpeg,35.2,31.3,,,,31.3,3.9,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826035742.jpeg,35.51,,31.13,,,31.13,4.38,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826035844.jpeg,33.48,,,,,,,Hypothermia
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826035946.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826040047.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826040149.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826040251.jpeg,35.97,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826040353.jpeg,35.82,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826040455.jpeg,35.91,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826040556.jpeg,36.0,,32.37,,,32.37,3.63,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826040657.jpeg,36.17,,,,,,,Normal
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826040758.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826040859.jpeg,36.26,,,,,,,Normal
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826041001.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826041106.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826041208.jpeg,36.19,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826041309.jpeg,36.26,,,,,,,Normal
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826041410.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826041511.jpeg,36.67,30.79,,,,30.79,5.88,Peripheral shutdown
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826041612.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826041713.jpeg,36.14,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826041814.jpeg,36.35,31.53,,,,31.53,4.82,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826041916.jpeg,35.93,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826042021.jpeg,36.27,,,,,,,Normal
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826042123.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826042224.jpeg,36.06,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826042325.jpeg,34.4,35.24,,,,35.24,-0.84,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826042426.jpeg,34.66,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826042528.jpeg,36.46,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826042630.jpeg,36.06,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826042732.jpeg,36.06,,,,,,,Normal
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826042834.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826042938.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826043039.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826043140.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826043242.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826043345.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826043446.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826043548.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826043650.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826043752.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826043856.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826043957.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826044058.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826044159.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826044301.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826044403.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826044505.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826044606.jpeg,36.14,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826044707.jpeg,34.47,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826044808.jpeg,35.03,,,,,,,Normal
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826044910.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826045011.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826045113.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826045214.jpeg,35.67,30.56,,,,30.56,5.11,Peripheral shutdown
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826045315.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826045416.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826045517.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826045618.jpeg,36.0,,,,,,,Normal
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826045720.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826045822.jpeg,36.19,,,,,,,Normal
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826045924.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826050026.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826050128.jpeg,35.88,,31.73,,,31.73,4.15,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826050230.jpeg,35.26,,,30.73,,30.73,4.53,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826050331.jpeg,35.36,,,,,,,Normal
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826050432.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826050536.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826050638.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826050739.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826050841.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826050942.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826051044.jpeg,35.53,31.38,,,,31.38,4.15,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826051145.jpeg,35.64,31.58,,30.36,,30.97,4.67,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826051247.jpeg,35.44,31.33,,30.17,,30.75,4.69,Peripheral shutdown
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826051348.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826051450.jpeg,35.32,31.03,,,,31.03,4.29,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826051552.jpeg,34.63,31.03,,,,31.03,3.6,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826051653.jpeg,31.3,31.41,,,,31.41,-0.11,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826051755.jpeg,34.43,,,,,,,Hypothermia
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826051856.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826051958.jpeg,34.12,30.7,,,,30.7,3.42,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826052059.jpeg,33.97,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826052201.jpeg,34.06,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826052303.jpeg,34.16,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826052405.jpeg,34.04,31.58,,,,31.58,2.46,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826052507.jpeg,32.55,30.28,,,,30.28,2.27,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826052608.jpeg,33.91,31.3,,,,31.3,2.61,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826052709.jpeg,33.95,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826052810.jpeg,33.83,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826052911.jpeg,32.98,30.89,,,,30.89,2.09,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826053013.jpeg,33.37,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826053114.jpeg,33.33,31.15,,,,31.15,2.18,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826053216.jpeg,34.1,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826053317.jpeg,,,,,,,,No core temperature
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826053418.jpeg,33.94,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826053524.jpeg,34.27,,31.38,,,31.38,2.89,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826053626.jpeg,34.7,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826053727.jpeg,34.02,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826053828.jpeg,33.88,,,,,,,Hypothermia
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826053930.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826054032.jpeg,34.39,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826054134.jpeg,34.02,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826054235.jpeg,33.89,30.13,,,,30.13,3.76,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826054336.jpeg,33.73,30.29,,,,30.29,3.44,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826054437.jpeg,33.75,30.4,,,,30.4,3.35,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826054539.jpeg,33.8,30.65,,,,30.65,3.15,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826054641.jpeg,32.7,30.69,,,,30.69,2.01,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826054743.jpeg,34.02,30.46,,,,30.46,3.56,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826054845.jpeg,32.43,30.11,,,,30.11,2.32,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826054946.jpeg,32.8,30.77,,,,30.77,2.03,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826055047.jpeg,33.6,,31.48,,,31.48,2.12,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826055149.jpeg,35.19,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826055251.jpeg,34.05,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826055353.jpeg,34.58,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826055456.jpeg,34.35,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826055557.jpeg,35.56,30.95,,,,30.95,4.61,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826055658.jpeg,33.43,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826055759.jpeg,34.12,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826055900.jpeg,34.96,,,,,,,Hypothermia
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826060002.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826060106.jpeg,,,,,,,,No core temperature
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826060208.jpeg,34.41,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826060310.jpeg,34.14,30.95,,,,30.95,3.19,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826060412.jpeg,33.92,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826060513.jpeg,35.11,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826060614.jpeg,30.94,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826060715.jpeg,34.48,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826060816.jpeg,33.23,31.08,,,,31.08,2.15,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826060919.jpeg,34.56,31.33,,,,31.33,3.23,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826061020.jpeg,34.02,31.18,,,,31.18,2.84,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826061122.jpeg,35.21,30.79,,,,30.79,4.42,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826061224.jpeg,34.44,,,,,,,Hypothermia
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826061325.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826061427.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826061529.jpeg,34.84,,,,,,,Hypothermia
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826061631.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826061732.jpeg,33.89,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826061836.jpeg,33.27,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826061938.jpeg,32.43,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826062040.jpeg,33.4,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826062141.jpeg,33.41,30.91,,,,30.91,2.5,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826062242.jpeg,34.24,30.98,,,,30.98,3.26,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826062343.jpeg,31.67,30.83,,,,30.83,0.84,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826062445.jpeg,33.51,30.78,,,,30.78,2.73,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826062547.jpeg,32.36,30.68,,,,30.68,1.68,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826062653.jpeg,32.8,30.78,,,,30.78,2.02,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826062755.jpeg,32.28,30.83,,,,30.83,1.45,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826062857.jpeg,32.97,31.33,,,,31.33,1.64,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826062958.jpeg,32.81,31.48,,,,31.48,1.33,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826063100.jpeg,32.97,31.08,,,,31.08,1.89,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826063202.jpeg,33.46,30.98,,,,30.98,2.48,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826063303.jpeg,33.28,31.23,,,,31.23,2.05,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826063405.jpeg,32.7,31.23,,,,31.23,1.47,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826063507.jpeg,32.94,31.08,,,,31.08,1.86,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826063609.jpeg,33.78,31.38,,,,31.38,2.4,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826063710.jpeg,32.78,31.28,,,,31.28,1.5,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826063812.jpeg,32.03,31.23,,,,31.23,0.8,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826063914.jpeg,32.6,31.03,,,,31.03,1.57,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826064015.jpeg,32.75,30.93,,,,30.93,1.82,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826064116.jpeg,33.01,30.83,,,,30.83,2.18,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826064218.jpeg,33.28,31.03,,,,31.03,2.25,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826064320.jpeg,33.24,30.31,,,,30.31,2.93,Hypothermia and Peripheral shutdown
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826064422.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826064523.jpeg,32.91,31.58,,,30.43,31.0,1.91,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826064625.jpeg,33.2,31.48,,,,31.48,1.72,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826064727.jpeg,33.16,31.58,,,,31.58,1.58,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826064829.jpeg,32.99,31.83,,,30.97,31.4,1.59,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826064930.jpeg,32.92,31.43,,,30.95,31.19,1.73,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826065032.jpeg,34.08,31.13,30.02,,,30.58,3.5,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826065134.jpeg,32.86,30.98,,,,30.98,1.88,Hypothermia
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826065236.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826065338.jpeg,33.4,,,,30.64,30.64,2.76,Hypothermia and Peripheral shutdown
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826065439.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826065541.jpeg,32.65,,31.15,,,31.15,1.5,Hypothermia
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826065643.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826065745.jpeg,32.51,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826065847.jpeg,33.05,31.13,30.28,,,30.7,2.35,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826065949.jpeg,32.58,31.18,31.18,,,31.18,1.4,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826070051.jpeg,32.6,31.43,31.43,,,31.43,1.17,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826070152.jpeg,32.73,31.38,,,,31.38,1.35,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826070253.jpeg,32.78,,31.58,,,31.58,1.2,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826070355.jpeg,33.29,31.18,31.18,,,31.18,2.11,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826070459.jpeg,33.37,,31.17,,,31.17,2.2,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826070603.jpeg,32.78,,32.17,,,32.17,0.61,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826070705.jpeg,34.31,,31.48,,,31.48,2.83,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826070807.jpeg,32.73,31.48,,,,31.48,1.25,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826070909.jpeg,32.84,31.48,,,,31.48,1.36,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826071010.jpeg,34.16,30.41,,,,30.41,3.75,Hypothermia and Peripheral shutdown
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826071111.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826071212.jpeg,33.08,32.82,32.19,,,32.5,0.58,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826071313.jpeg,32.32,34.14,31.28,,31.28,32.23,0.09,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826071416.jpeg,34.11,31.09,,,,31.09,3.02,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826071518.jpeg,32.5,31.08,,31.08,,31.08,1.42,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826071620.jpeg,32.24,30.98,,,,30.98,1.26,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826071722.jpeg,34.24,31.03,,,,31.03,3.21,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826071824.jpeg,32.86,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826071926.jpeg,33.84,31.28,,,,31.28,2.56,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826072028.jpeg,33.55,31.28,,,,31.28,2.27,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826072130.jpeg,33.7,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826072234.jpeg,34.19,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826072336.jpeg,34.1,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826072438.jpeg,33.64,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826072540.jpeg,34.7,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826072642.jpeg,31.97,31.18,,,,31.18,0.79,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826072743.jpeg,33.37,31.46,,,,31.46,1.91,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826072845.jpeg,33.09,31.44,,,,31.44,1.65,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826072947.jpeg,34.51,31.45,,,,31.45,3.06,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826073049.jpeg,33.21,31.76,,,,31.76,1.45,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826073152.jpeg,33.53,31.29,31.53,,,31.41,2.12,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826073254.jpeg,33.33,31.6,,,,31.6,1.73,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826073355.jpeg,34.51,31.53,,,,31.53,2.98,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826073457.jpeg,32.36,31.38,,,,31.38,0.98,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826073558.jpeg,32.66,,,,31.06,31.06,1.6,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826073659.jpeg,33.26,31.04,,,,31.04,2.22,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826073801.jpeg,35.3,31.16,,,,31.16,4.14,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826073902.jpeg,30.57,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826074008.jpeg,33.25,31.3,,31.83,,31.56,1.69,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826074111.jpeg,33.9,31.38,,,,31.38,2.52,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826074212.jpeg,34.62,31.33,,,,31.33,3.29,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826074313.jpeg,35.24,31.18,,,,31.18,4.06,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826074414.jpeg,33.97,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826074515.jpeg,34.3,31.48,,,,31.48,2.82,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826074617.jpeg,33.67,31.03,,,,31.03,2.64,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826074719.jpeg,35.22,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826074823.jpeg,33.61,31.18,31.33,,,31.26,2.35,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826074926.jpeg,35.13,30.98,,,,30.98,4.15,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826075028.jpeg,35.14,31.03,,,,31.03,4.11,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826075129.jpeg,35.1,31.23,,,,31.23,3.87,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826075231.jpeg,35.32,31.08,,,,31.08,4.24,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826075333.jpeg,35.24,31.13,,,,31.13,4.11,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826075434.jpeg,33.87,31.28,,,,31.28,2.59,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826075536.jpeg,35.23,31.08,,,,31.08,4.15,Peripheral shutdown
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826075639.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826075741.jpeg,35.25,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826075843.jpeg,,,,,,,,No core temperature
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826075945.jpeg,35.16,31.23,,,,31.23,3.93,Peripheral shutdown
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826080046.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826080147.jpeg,33.42,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826080249.jpeg,33.59,31.03,,,,31.03,2.56,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826080351.jpeg,34.94,,33.56,,,33.56,1.38,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826080453.jpeg,34.95,,33.76,,,33.76,1.19,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826080555.jpeg,35.14,,32.69,,,32.69,2.45,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826080656.jpeg,34.53,31.13,,,,31.13,3.4,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826080758.jpeg,33.84,33.97,,,,33.97,-0.13,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826080900.jpeg,35.34,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826081001.jpeg,35.07,31.28,31.23,,,31.26,3.81,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826081102.jpeg,35.15,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826081204.jpeg,35.26,,,,,,,Normal
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826081306.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826081408.jpeg,35.58,31.83,,,,31.83,3.75,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826081510.jpeg,35.28,31.58,,,,31.58,3.7,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826081611.jpeg,35.28,31.53,,31.36,,31.44,3.84,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826081716.jpeg,33.75,31.43,31.67,,,31.55,2.2,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826081818.jpeg,33.99,31.23,31.26,,,31.24,2.75,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826081920.jpeg,33.74,30.93,30.99,,,30.96,2.78,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826082021.jpeg,34.2,30.73,32.18,,,31.46,2.74,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826082123.jpeg,35.15,31.61,31.06,30.71,,31.13,4.02,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826082225.jpeg,34.88,30.98,,,,30.98,3.9,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826082326.jpeg,35.25,31.28,,,,31.28,3.97,Peripheral shutdown
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826082428.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826082532.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826082633.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826082734.jpeg,,,,,,,,No core temperature
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826082835.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826082937.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826083038.jpeg,35.98,30.09,,,,30.09,5.89,Peripheral shutdown
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826083140.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826083241.jpeg,34.76,32.68,35.37,,33.72,33.92,0.84,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826083342.jpeg,34.53,32.24,34.69,,,33.47,1.06,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826083443.jpeg,34.68,32.33,34.37,,,33.35,1.33,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826083546.jpeg,37.39,33.38,35.03,,33.2,33.87,3.52,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826083649.jpeg,35.86,32.09,,,,32.09,3.77,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826083750.jpeg,36.43,32.67,,,32.68,32.67,3.76,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826083852.jpeg,36.23,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826083953.jpeg,35.48,32.59,,,,32.59,2.89,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826084054.jpeg,33.21,33.92,34.64,,,34.28,-1.07,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826084155.jpeg,33.57,32.88,34.28,,,33.58,-0.01,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826084256.jpeg,33.83,31.78,,,,31.78,2.05,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826084357.jpeg,35.4,,34.65,,,34.65,0.75,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826084459.jpeg,32.94,33.05,33.5,,,33.28,-0.34,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826084601.jpeg,33.77,31.98,,,,31.98,1.79,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826084703.jpeg,33.48,31.52,,,,31.52,1.96,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826084805.jpeg,35.35,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826084906.jpeg,34.25,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826085007.jpeg,34.68,30.45,,,,30.45,4.23,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826085108.jpeg,33.07,31.05,,,,31.05,2.02,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826085209.jpeg,34.87,32.62,,,,32.62,2.25,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826085311.jpeg,34.68,32.51,33.37,,,32.94,1.74,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826085415.jpeg,33.99,33.18,,,,33.18,0.81,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826085517.jpeg,34.49,,33.27,,,33.27,1.22,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826085618.jpeg,34.68,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826085720.jpeg,34.85,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826085821.jpeg,34.58,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826085922.jpeg,35.19,31.45,33.98,,,32.71,2.48,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826090024.jpeg,35.94,34.22,,,,34.22,1.72,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826090126.jpeg,35.85,32.45,34.49,,,33.47,2.38,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826090228.jpeg,35.38,32.9,34.14,,,33.52,1.86,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826090329.jpeg,34.38,33.42,,,,33.42,0.96,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826090431.jpeg,34.22,32.08,34.74,,,33.41,0.81,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826090532.jpeg,35.47,33.23,,31.68,,32.46,3.01,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826090633.jpeg,35.26,34.85,,,,34.85,0.41,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826090735.jpeg,34.24,34.52,,,,34.52,-0.28,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826090836.jpeg,35.64,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826090938.jpeg,35.84,34.82,,,,34.82,1.02,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826091039.jpeg,35.36,31.74,,,,31.74,3.62,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826091140.jpeg,36.5,35.59,,,,35.59,0.91,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826091241.jpeg,35.78,33.65,,,,33.65,2.13,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826091344.jpeg,34.84,35.19,35.68,,,35.44,-0.6,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826091445.jpeg,36.4,35.52,34.92,,,35.22,1.18,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826091546.jpeg,36.13,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826091648.jpeg,35.97,31.78,34.63,,,33.2,2.77,Peripheral shutdown
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826091750.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826091851.jpeg,36.23,34.84,,,,34.84,1.39,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826091952.jpeg,36.3,30.24,34.67,,,32.46,3.84,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826092054.jpeg,36.02,31.78,34.62,,,33.2,2.82,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826092155.jpeg,35.26,31.33,33.93,,,32.63,2.63,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826092258.jpeg,35.35,31.33,33.99,,,32.66,2.69,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826092400.jpeg,,,,,,,,No core temperature
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826092501.jpeg,,,,,,,,
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826092603.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826092704.jpeg,34.13,30.78,33.38,,,32.08,2.05,Hypothermia
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826092805.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826092906.jpeg,31.86,34.9,33.83,,,34.36,-2.5,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826093007.jpeg,35.88,30.89,34.21,,,32.55,3.33,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826093108.jpeg,35.91,32.05,34.54,,,33.3,2.61,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826093212.jpeg,35.92,32.26,34.88,,,33.57,2.35,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826093313.jpeg,35.8,33.3,34.5,,,33.9,1.9,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826093414.jpeg,35.24,33.88,33.72,,,33.8,1.44,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826093515.jpeg,36.23,31.06,33.75,,,32.4,3.83,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826093616.jpeg,35.34,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826093717.jpeg,35.74,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826093818.jpeg,35.46,34.19,34.74,,,34.47,0.99,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826093919.jpeg,35.45,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826094021.jpeg,35.72,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826094127.jpeg,35.04,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826094229.jpeg,35.55,31.55,,,,31.55,4.0,Peripheral shutdown
+False,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826094330.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826094431.jpeg,35.73,32.73,34.18,,,33.46,2.27,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826094532.jpeg,32.65,34.87,34.65,,,34.76,-2.11,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826094633.jpeg,35.72,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826094735.jpeg,35.36,34.48,34.68,,,34.58,0.78,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826094837.jpeg,34.13,,35.02,,,35.02,-0.89,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826094938.jpeg,34.9,30.34,35.38,,,32.86,2.04,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826095042.jpeg,35.57,32.85,35.46,,,34.16,1.41,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826095143.jpeg,34.86,34.57,36.08,,,35.33,-0.47,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826095244.jpeg,34.12,34.32,34.97,,,34.64,-0.52,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826095345.jpeg,34.5,,34.84,,,34.84,-0.34,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826095446.jpeg,34.39,31.78,34.56,,,33.17,1.22,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826095548.jpeg,35.45,,33.78,,,33.78,1.67,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826095649.jpeg,35.84,34.44,,,,34.44,1.4,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826095750.jpeg,35.45,33.97,,,,33.97,1.48,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826095852.jpeg,35.91,34.38,35.42,,,34.9,1.01,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826095953.jpeg,35.93,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826100054.jpeg,36.23,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826100156.jpeg,34.9,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826100257.jpeg,33.01,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826100358.jpeg,33.55,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826100459.jpeg,33.24,,35.93,,,35.93,-2.69,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826100601.jpeg,34.51,,35.87,,,35.87,-1.36,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826100702.jpeg,34.35,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826100803.jpeg,34.05,35.06,35.0,,,35.03,-0.98,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826100905.jpeg,33.61,35.2,36.25,,,35.72,-2.11,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826101008.jpeg,33.71,32.92,35.17,,,34.04,-0.33,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826101110.jpeg,35.33,,35.07,,,35.07,0.26,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826101211.jpeg,34.57,,35.19,,,35.19,-0.62,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826101312.jpeg,34.49,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826101414.jpeg,34.78,35.42,35.42,,,35.42,-0.64,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826101515.jpeg,35.17,35.5,35.5,,,35.5,-0.33,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826101616.jpeg,36.2,34.71,35.12,,,34.92,1.28,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826101717.jpeg,36.22,34.78,34.92,,,34.85,1.37,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826101819.jpeg,36.12,34.68,34.25,,,34.47,1.65,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826101921.jpeg,33.12,35.15,35.66,,,35.4,-2.28,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826102022.jpeg,33.76,35.76,35.93,,,35.84,-2.08,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826102123.jpeg,33.54,35.61,35.94,,,35.78,-2.24,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826102224.jpeg,33.4,35.7,,,,35.7,-2.3,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826102325.jpeg,33.66,35.68,,,,35.68,-2.02,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826102426.jpeg,33.36,35.3,,,,35.3,-1.94,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826102528.jpeg,33.3,35.32,,,,35.32,-2.02,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826102629.jpeg,33.58,35.53,,,,35.53,-1.95,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826102732.jpeg,33.64,35.59,,,,35.59,-1.95,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826102833.jpeg,33.69,35.6,,,,35.6,-1.91,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826102935.jpeg,33.14,35.1,,,,35.1,-1.96,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826103036.jpeg,33.18,35.16,,,,35.16,-1.98,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826103137.jpeg,33.83,35.34,,,,35.34,-1.51,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826103239.jpeg,35.42,35.37,,,,35.37,0.05,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826103340.jpeg,33.51,34.91,34.76,,,34.83,-1.32,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826103442.jpeg,34.16,35.1,33.26,,,34.18,-0.02,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826103543.jpeg,33.95,35.29,34.29,,,34.79,-0.84,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826103644.jpeg,34.22,35.45,35.81,,,35.63,-1.41,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826103745.jpeg,33.58,35.09,,,,35.09,-1.51,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826103847.jpeg,33.74,35.18,,,,35.18,-1.44,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826103948.jpeg,34.58,35.19,,,,35.19,-0.61,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826104049.jpeg,34.59,35.28,,,,35.28,-0.69,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826104151.jpeg,34.85,35.4,,,,35.4,-0.55,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826104253.jpeg,34.7,35.5,,,,35.5,-0.8,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826104355.jpeg,33.34,34.84,,,,34.84,-1.5,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826104457.jpeg,32.56,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826104558.jpeg,34.76,34.78,,,,34.78,-0.02,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826104659.jpeg,33.48,34.74,34.89,,,34.82,-1.34,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826104800.jpeg,34.9,,34.11,,,34.11,0.79,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826104902.jpeg,34.96,35.76,,,,35.76,-0.8,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826105004.jpeg,36.11,,34.4,,,34.4,1.71,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826105106.jpeg,36.21,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826105207.jpeg,35.7,,32.6,,,32.6,3.1,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826105308.jpeg,36.3,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826105409.jpeg,36.27,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826105510.jpeg,35.65,30.45,,,,30.45,5.2,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826105611.jpeg,36.08,30.6,,,,30.6,5.48,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826105713.jpeg,36.05,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826105815.jpeg,36.22,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826105916.jpeg,36.6,30.33,,,,30.33,6.27,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826110018.jpeg,35.71,,,,,,,Normal
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826110119.jpeg,34.42,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826110220.jpeg,33.31,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826110322.jpeg,33.9,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826110424.jpeg,34.27,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826110525.jpeg,34.52,34.72,,,,34.72,-0.2,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826110626.jpeg,33.26,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826110727.jpeg,33.96,34.67,,,,34.67,-0.71,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/26.08.24/HM20240826110828.jpeg,34.43,,,,,,,Hypothermia

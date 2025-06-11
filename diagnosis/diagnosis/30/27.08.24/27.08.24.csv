@@ -1,0 +1,16 @@
+Process,Image Path,core,left_hand,right_hand,left_foot,right_foot,limbs_avg,core_minus_limbs,diagnosis
+True,/data/uabcvmsc/shared/newborn/30/27.08.24/HM20240827124854.jpeg,35.12,34.12,,31.29,30.65,32.02,3.1,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/27.08.24/HM20240827124956.jpeg,35.09,31.65,,30.72,30.95,31.11,3.98,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/27.08.24/HM20240827125058.jpeg,34.08,34.28,,31.41,31.67,32.45,1.63,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/27.08.24/HM20240827125204.jpeg,35.33,34.39,,31.82,31.5,32.57,2.76,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/27.08.24/HM20240827125307.jpeg,34.81,,35.13,,,35.13,-0.32,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/27.08.24/HM20240827125409.jpeg,33.94,,,,,,,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/27.08.24/HM20240827125515.jpeg,35.02,,,32.75,31.88,32.32,2.7,Peripheral shutdown
+False,/data/uabcvmsc/shared/newborn/30/27.08.24/HM20240827125617.jpeg,,,,,,,,
+True,/data/uabcvmsc/shared/newborn/30/27.08.24/HM20240827125718.jpeg,35.52,,,32.06,32.08,32.07,3.45,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/27.08.24/HM20240827125819.jpeg,34.67,,,,31.55,31.55,3.12,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/27.08.24/HM20240827125921.jpeg,35.16,,,31.93,31.93,31.93,3.23,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/27.08.24/HM20240827130022.jpeg,35.39,32.08,,31.07,31.83,31.66,3.73,Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/27.08.24/HM20240827130124.jpeg,34.84,32.53,,31.59,31.83,31.98,2.86,Hypothermia and Peripheral shutdown
+True,/data/uabcvmsc/shared/newborn/30/27.08.24/HM20240827130226.jpeg,32.91,31.36,,31.58,31.67,31.54,1.37,Hypothermia
+True,/data/uabcvmsc/shared/newborn/30/27.08.24/HM20240827130328.jpeg,35.04,34.11,,31.88,31.88,32.62,2.42,Normal

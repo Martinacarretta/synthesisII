@@ -1,18 +1,17 @@
 print('importing libraries')
+import csv
 import os
-import mediapipe as mp
-import numpy as np
+import re
+
 import cv2
 import matplotlib.pyplot as plt
+import numpy as np
+import mediapipe as mp
 
 from mediapipe import solutions
 from mediapipe.framework.formats import landmark_pb2
 from mediapipe.tasks import python
 from mediapipe.tasks.python import vision
-
-import csv
-
-import re
 
 print('libraries imported successfully')
 
@@ -34,13 +33,11 @@ def draw_landmarks_on_image(rgb_image, detection_result):
     pose_landmarks_proto.landmark.extend([
       landmark_pb2.NormalizedLandmark(x=landmark.x, y=landmark.y, z=landmark.z) for landmark in pose_landmarks
     ])
-    #solutions.drawing_utils.draw_landmarks(
     mp_drawing.draw_landmarks(
       annotated_image,
       pose_landmarks_proto,
       solutions.pose.POSE_CONNECTIONS,
-      #solutions.drawing_styles.get_default_pose_landmarks_style()
-      mp_drawing.DrawingSpec(color=(0,255,0), thickness=2, circle_radius=2),  # Increased thickness & radius
+      mp_drawing.DrawingSpec(color=(0,255,0), thickness=2, circle_radius=2),  # thickness & radius
       mp_drawing.DrawingSpec(color=(255,0,0), thickness=2, circle_radius=2)
       )
   return annotated_image
@@ -99,7 +96,6 @@ def process_folder(folder_path, output_subfolder):
     if "X_0" not in headers:
         headers.extend(keypoint_headers)
 
-
     # Process each image
     for image_path in image_paths:
         # print(f"Processing image: {image_path}")
@@ -107,8 +103,7 @@ def process_folder(folder_path, output_subfolder):
         matching_row = None
         #extract relative path for comparison
         rel_image_path = os.path.relpath(image_path, folder_path)
-        #consider _VIS or .VIS
-        #rel_image_path = rel_image_path.split('_VIS')[0] 
+        #consider _VIS or .VIS format
         rel_image_path = re.split(r'_VIS|\.VIS', rel_image_path)[0]
 
         for row in rows:
@@ -117,7 +112,6 @@ def process_folder(folder_path, output_subfolder):
                 process_value = row[process]
                 break
 
-        # print(process_value)
         if process_value == 'True':
             if matching_row != None:
                 image = mp.Image.create_from_file(image_path)
@@ -132,7 +126,7 @@ def process_folder(folder_path, output_subfolder):
                     for j in range(len(keypoints)):
                         x = keypoints[j].x
                         y = keypoints[j].y
-                        x = int(x * width)   #########
+                        x = int(x * width)   ######### normal coordinates
                         y = int(y * height)  #########
                         z = keypoints[j].z
                         visibility = keypoints[j].visibility
@@ -140,7 +134,7 @@ def process_folder(folder_path, output_subfolder):
                         keypoint_values.extend([x, y, z, visibility, presence])
 
                     if matching_row:
-                        matching_row.extend([str(v) for v in keypoint_values])
+                        matching_row.extend([str(v) for v in keypoint_values]) #
 
                     # Save annotated image
                     annotated_image = draw_landmarks_on_image(image_np, detection_result)

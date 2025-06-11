@@ -2,6 +2,12 @@ import os
 import pandas as pd
 import re
 
+# This script merges multiple CSV files from a specified folder, ensuring they contain specific columns.
+# It also sorts the merged data based on timestamps extracted from filenames in the "Image Path" column.
+
+#This script is used to join all csv files of the same baby into one. 
+# Used for the plots (). 
+
 # Define the columns you want to keep
 COLUMNS_TO_KEEP = [
     "Process", "Image Path", 
@@ -68,27 +74,4 @@ def join_all_csvs(folder_path):
 
 # Example usage
 if __name__ == "__main__":
-    join_all_csvs("/home/cvmsct05/temperatures_max_min/41")
-    join_all_csvs("/home/cvmsct05/temperatures_max_min/46")
-    join_all_csvs("/home/cvmsct05/temperatures_max_min/47")
-    join_all_csvs("/home/cvmsct05/temperatures_max_min/44")
-    join_all_csvs("/home/cvmsct05/temperatures_max_min/49")
-    join_all_csvs("/home/cvmsct05/temperatures_max_min/50")
-    join_all_csvs("/home/cvmsct05/temperatures_max_min/53")
-
-    join_all_csvs("/home/cvmsct05/temperatures_max_min/52")
-    join_all_csvs("/home/cvmsct05/temperatures_max_min/54")
     join_all_csvs("/home/cvmsct05/temperatures_max_min/55")
-
-
-    # join_all_csvs("/home/cvmsct05/temperatures_max_min/34")
-    # join_all_csvs("/home/cvmsct05/temperatures_max_min/35")
-    # join_all_csvs("/home/cvmsct05/temperatures_max_min/36")
-    # join_all_csvs("/home/cvmsct05/temperatures_max_min/37")
-    # join_all_csvs("/home/cvmsct05/temperatures_max_min/38")
-    # join_all_csvs("/home/cvmsct05/temperatures_max_min/39")
-    # join_all_csvs("/home/cvmsct05/temperatures_max_min/40")
-    # join_all_csvs("/home/cvmsct05/temperatures_max_min/42")
-    # join_all_csvs("/home/cvmsct05/temperatures_max_min/43")
-    # join_all_csvs("/home/cvmsct05/temperatures_max_min/45")
-    # join_all_csvs("/home/cvmsct05/temperatures_max_min/51")
