@@ -10,6 +10,11 @@ import math
 ############################################################################ FILE PROCESSING ############################################################################
 
 def folder_subfolder_or_csv(path): # gets the correct CSV
+    """
+    Traverse the path to find all CSV files.
+    If the path is a file, it checks if it is a CSV file.
+    If the path is a directory, it searches for all CSV files in that directory and its subdirectories.
+    """
     if os.path.isfile(path) and path.endswith(".csv"):
         return [path]
     elif os.path.isdir(path):
@@ -23,6 +28,9 @@ def folder_subfolder_or_csv(path): # gets the correct CSV
         raise ValueError(f"Path '{path}' is not a valid file or directory")
     
 def get_parts (line):
+    """
+    Used to get all the values from a line in the CSV file.
+    """
     # Split the line by commas and strip whitespace
     parts = line.strip().split(',')
     
@@ -55,6 +63,10 @@ def normalize(value, min_val, max_val, new_min, new_max):
 
 
 def color_to_temp_to_grayscale(image, newborn_id, max_temp, min_temp):
+    """
+    This function converts a color image to a grayscale image based on a temperature mapping.
+    """
+    
     # Define a fine-grained normalized temperature-to-color mapping TO PRESERVE THE ORDER OF THE TEMPERATURE SCALE. 
     # DICTIONARY GOES FROM 0 TO 1 SO THAT WE CAN USE THE MAX AND MIN TEMPERATURE VALUES TO NORMALIZE THE TEMPERATURES FOR EACH PICTURE ACCORDINGLY
     if newborn_id == "29" or newborn_id == "30" or newborn_id == "31" : #landscape
@@ -137,6 +149,13 @@ def color_to_temp_to_grayscale(image, newborn_id, max_temp, min_temp):
 ############################################################################ CHECK TEMP IN KEYPOINTS ############################################################################
 
 def map_normal_to_cropped(baby_ID, x, y, normal_width, normal_height, normalized=True):
+    """
+    Manual mapping of keypoints from the normal image to the cropped image.
+    Babies 29, 30, and 31 have a rotated crop, so we need to handle them differently.
+    The function returns the coordinates (x, y) in the cropped image.
+    If the coordinates are outside the cropped region, it returns None, None.
+    If the parameter normalized is True, it means that the coordinates are normalized to the size of the normal image (0-1 range).
+    """
     if x == None or y == None:
         return None, None
     if normalized:
@@ -198,6 +217,9 @@ def map_normal_to_cropped(baby_ID, x, y, normal_width, normal_height, normalized
     return x4, y4
 
 def grayscale_image_creation (path, newborn_id, max_temp, min_temp):
+    """
+    From the image, it will create a grayscale image with the temperature mapping.
+    """
     try:
         pil_image = Image.open(path) #thermal
         image = pil_image.convert("RGB")
@@ -213,11 +235,16 @@ def grayscale_image_creation (path, newborn_id, max_temp, min_temp):
 
 ############################################################################ WINDOW I ############################################################################
 def get_temperature_at_point (coord, grayscale_image, min_temp, max_temp):
+    """
+    Given a single coordinate (x, y) and a grayscale image, returns the temperature at that point.
+    """
     h, w = grayscale_image.shape[:2] #to know if keypoints are in the image
     if coord is None or None in coord:
         return float('nan')
 
+
     x, y = coord
+    # If inside the image bounds, get the grayscale value and normalize it to temperature
     if 0 <= x < w and 0 <= y < h:
         value = grayscale_image[int(round(y)), int(round(x))]
         return normalize(value, 0, 255, min_temp, max_temp)
@@ -225,11 +252,21 @@ def get_temperature_at_point (coord, grayscale_image, min_temp, max_temp):
         return float('nan')
 
 def check_temperatures(path, newborn_id, max_temp, min_temp, keypoints):
+    """
+    Checks the temperatures at the given keypoints given:
+    - path
+    - the ID (since they will have different temperature scales)
+    - the max and min temperature of the frame (used to normalize from grayscale value to temperature)
+    - keypoints: LIST of tuples with the coordinates of the keypoints
+    """
+
+    # Create the grayscale image from the thermal image
     grayscale_image = grayscale_image_creation (path, newborn_id, max_temp, min_temp)
     if grayscale_image is None:
         return [float('nan')] * len(keypoints)
     
-    #get grayscale values at the selected points
+    # get grayscale values at the selected points (PARALLELIZATION OVER ALL THE KEYPOINTS IN THE LIST)
+    # it will receive a list of keypoint, the grayscale image, and the min and max temperatures and return a list of temperatures
     temperatures = Parallel(n_jobs=-1)(
         delayed(get_temperature_at_point)(kp, grayscale_image, min_temp, max_temp)
         for kp in keypoints
@@ -237,24 +274,34 @@ def check_temperatures(path, newborn_id, max_temp, min_temp, keypoints):
 
     return temperatures
 
-def window(pixel, path, newborn_id, maxt, mint): # TO COMPUTE HOTEST SPOT
+def window(pixel, path, newborn_id, maxt, mint):
+    """
+    Computes the pixel with the highest temperature in a 31x31 window around a given pixel.
+    """
     side = 15 # 31x31 window
     stride = 3 # get 121 pixels
     x_center, y_center = pixel
 
+    # Create list of all the coordinates in the desired window
     coords = [(x_center + dx, y_center + dy)
         for dx in range(-side, side + 1, stride)
         for dy in range(-side, side + 1, stride)
     ]
+    
+    # get the temperatures at the coordinates
     temps = check_temperatures(path, newborn_id, maxt, mint, coords)
     results = list(zip(coords, temps))
 
+    # Return the COORDINATE with the maximum temperature
     max_coord, _ = max(results, key=lambda x: x[1])
     return max_coord
 
 ############################################################################ WINDOW II ############################################################################
 
 def average_temp_around_pixel(center_pixel, path, newborn_id, maxt, mint):
+    """
+    Computes the average temperature around a given pixel in a 11x11 window.
+    """
     if center_pixel is None:
         return float('nan')
     
@@ -264,13 +311,18 @@ def average_temp_around_pixel(center_pixel, path, newborn_id, maxt, mint):
     if x_center is None or y_center is None:
         return float('nan')
 
+    # Generate coordinates for the 11x11 window centered at (x_center, y_center)
     coords = [(x_center + dx, y_center + dy) for dx in range(-side, side + 1) for dy in range(-side, side + 1)]
+    
+    # get all the temperatures at the coordinates
     temps = check_temperatures(path, newborn_id, maxt, mint, coords)
 
+    # Filter out NaN values
     valid_temps = [t for t in temps if not math.isnan(t)]
     if not valid_temps:
         return float('nan')
 
+    # return average temperature
     avg_temp = sum(valid_temps) / len(valid_temps)
     return avg_temp
 
@@ -278,10 +330,15 @@ def average_temp_around_pixel(center_pixel, path, newborn_id, maxt, mint):
 ############################################################################ PRE MAIN ############################################################################
 
 def process_line(line, i):
-    print(i)
+    """
+    Given a line from the csv, compute the temperatures at keypoints and update the line.
+    """
+    
+    print(i) # just to see progress in terminal
     # read the path, min temp and max temp
     process, path, mint, maxt, keypoints = get_parts(line)
-    print(path)
+    print(path) # just to see progress in terminal
+    
     if process == "True":
         newborn_id = path.split('/')[5]
         
@@ -296,20 +353,21 @@ def process_line(line, i):
         vis_path = possible_vis_paths[0] if os.path.exists(possible_vis_paths[0]) else possible_vis_paths[1]
         normal_img = Image.open(vis_path)
         
-        normal_width, normal_height = normal_img.size
+        normal_width, normal_height = normal_img.size # used to map keypoints to cropped image
 
         # ------------ PROCESS ------------ #
         # Convert keypoints to ints (they are strings)
         keypoints = [(int(x), int(y)) if x not in (None, 'None') and y not in (None, 'None') else (None, None) for x, y in keypoints]
 
+        # Map keypoints to cropped image coordinates
         mapped_keypoints = [map_normal_to_cropped(newborn_id, x, y, normal_width, normal_height, False) for x, y in keypoints]
         
         # ------------ WINDOW ------------ #
-        # first get the highest temperature pixel for the torso
+        # first get the highest temperature pixel for the torso (max value in window)
         if (mapped_keypoints[0] != (None, None)):
             # if the keypoint is different from none and none, i should check the temperatures of the pixels of a window
             pixel = mapped_keypoints[0] 
-            x_updated, y_updated = window(pixel, path, newborn_id, maxt, mint)
+            x_updated, y_updated = window(pixel, path, newborn_id, maxt, mint) # get the pixel with the highest temperature in the window
             mapped_keypoints.append((x_updated, y_updated)) #add the updated torso to get the temperatures
         else:
             mapped_keypoints.append((None, None)) #add the updated torso to get the temperatures
@@ -318,11 +376,10 @@ def process_line(line, i):
         
         #get the average temperature of a window for each keypint
         temperatures = [average_temp_around_pixel(coord, path, newborn_id, maxt, mint) for coord in mapped_keypoints]
-        # temperatures = check_temperatures(path, newborn_id, maxt, mint, mapped_keypoints)
         
-        temperatures.insert(0, x_updated) #updated torso
-        temperatures.insert(1, y_updated) #updated torso
-        # print("------------------------------------------------------------------------")
+        temperatures.insert(0, x_updated) #updated torso in position 0
+        temperatures.insert(1, y_updated) #updated torso in position 1
+        #This is just to have the updated torso in the first two positions of the list and make it easier to update the csv line
 
         # Discard temperature if too high:
         temperatures_thresholded = temperatures[:2] + [
@@ -344,21 +401,39 @@ def process_line(line, i):
 ############################################################################ MAIN ############################################################################
 
 def main(path):
+    """
+    From a given path, it processes all CSV files in the folder or subfolders.
+    It reads the CSV files, processes each line to compute the temperatures at keypoints, and updates the CSV files with new temperature fields.
+    The new fields added are:
+    - torso_updated_x
+    - torso_updated_y
+    - torso_temp
+    - left_hand_temp
+    - right_hand_temp
+    - left_foot_temp
+    - right_foot_temp
+    - torso_updated_temp
+    It skips files that have already been processed (i.e., if the new fields are already present in the header).
+    It uses parallel processing to speed up the computation of temperatures at keypoints.
+    """
+    
+    # Get all CSV file paths from the given path (folder or subfolder)
     filepaths = folder_subfolder_or_csv(path)
     added_fields_header = ["torso_updated_x", "torso_updated_y", "torso_temp", "left_hand_temp", "right_hand_temp", "left_foot_temp", "right_foot_temp", "torso_updated_temp"]
 
+    # For each file, read the lines, process them, and write back the updated lines
     for filepath in filepaths:
         with open(filepath, 'r') as file:
             lines = file.readlines()
 
         header = lines[0].strip()
         
-         # Skip this file if all required fields are already present
+         # Skip this file if all required fields are already present (already processed)
         if all(field in header for field in added_fields_header):
             print(f"⏭️ Skipping {filepath} (already processed)")
             continue
         
-        #new header
+        # New header
         header = header + "," + ",".join(field for field in added_fields_header if field not in header)
         updated_lines = [header + "\n"]
 

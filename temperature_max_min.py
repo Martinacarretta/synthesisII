@@ -8,6 +8,8 @@ import csv
 import glob
 import os
 
+# Script to process images and extract temperature minimum and maximum using Tesseract OCR
+# important to note this is the only script that works with opencv, the rest use PIL, so it's okay to work with vertical and horizontal images
 
 def process_region(region):
     """
@@ -29,6 +31,9 @@ def process_region(region):
     return numbers #returns the numbers just like that 
 
 def all_images (path, plot=True):
+    """
+    Given a path to an image, it will create the windows for where the maximum and minimum temperatures are located, and return the maximum and minimum temperatures.
+    """
     # Iterate through each image in the folder
     print(f"Processing: {path}")
 
@@ -36,7 +41,8 @@ def all_images (path, plot=True):
     if image is None:
         print(f"Error loading image: {path}")
         return None, None
-      
+    
+    # GET WINDOW COORDINATES
     if image.shape[1] > image.shape[0]: #landscape
         u = [15, 139, 70, 33]
         l = [15, 392, 70, 33]
@@ -50,10 +56,11 @@ def all_images (path, plot=True):
     square_region_upper = image[uy:uy+uh, ux:ux+uw] #max temp square
     square_region_lower = image[ly:ly+lh, lx:lx+lw] #min temp square
     
-
+    # call the function to get the min and max temperatures
     numbers = process_region(square_region_upper)
     numbers2 = process_region(square_region_lower)
 
+    # return the maximum and minimum temperatures
     try:
         upper = float(max(numbers)) if numbers else None
         lower = float(min(numbers2)) if numbers2 else None
@@ -63,6 +70,10 @@ def all_images (path, plot=True):
 
     
 def process_folder (folder_path):
+    """
+    This function processes all images in a given folder, extracts temperature data, and saves the results to a CSV file.
+    """
+    # Only consider image files that do not contain "VIS" in their name since those are not temperature images
     image_paths = sorted([f for f in glob.glob(os.path.join(folder_path, "*")) 
                          if f.lower().endswith(('.jpeg', '.jpg', '.png')) and "VIS" not in f])
 
@@ -87,15 +98,15 @@ def process_folder (folder_path):
         writer.writerow(["Process", "Image Path", "Max Temp", "Min Temp"])
         
         # Process each image
-        i=0
+        i=0 # this is just used to see the progress in the terminal
         for path in image_paths:
-            print(i)
+            print(i) # this is just used to see the progress in the terminal
             i+=1
-            max_t, min_t = all_images(path)
+            max_t, min_t = all_images(path) # call function
             
-            if max_t is not None:
-                if max_t < 33 or max_t > 50:
-                    process = False
+            if max_t is not None: # Haven't had problems with min_t being None
+                if max_t < 33 or max_t > 50: # Threshold for max temperature
+                    process = False # set parameter to false if the max temperature is not in the range
                 else:
                     process = True
             else:
@@ -107,6 +118,11 @@ def process_folder (folder_path):
     print(f"✅ Results saved to {csv_filename}")
     
 def main(root_path):
+    """
+    Traverse the path and see if it's a day folder, a baby folder or a root directory.
+    If it's a day folder, process it. If it's a baby folder, process all day folders inside it.
+    If it's the root directory, process all day folders inside it.
+    """
     def is_day_folder(path):
         return (
             os.path.isdir(path)
