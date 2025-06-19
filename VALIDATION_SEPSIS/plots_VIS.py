@@ -14,22 +14,16 @@ fever = {
 }
 baby_data = defaultdict(list)
 
-def process_csv(input_csv_path, output_base="/home/cvmsct05/VALIDATION/plots_validation/"):
+def process_csv(input_csv_path, output_base="/home/cvmsct05/diagnosis/"):
     df = pd.read_csv(input_csv_path)
 
-    # Extract baby_id from folder name like "some_47"
     parts = input_csv_path.strip("/").split("/")
-    baby_id = parts[-2].split("_")[-1]  # 'some_47' ? '47'
+    baby_id = parts[-3]
+    date = parts[-2]
 
-    # Extract date from filename like '01.12.24(1)_VIS_with_temps.csv'
-    filename = os.path.basename(input_csv_path)
-    raw_date = filename.split("_")[0]  # '01.12.24(1)'
-    raw_date_clean = raw_date.split("(")[0]  # '01.12.24'
-    date = raw_date_clean.replace(".", "-")  # Convert to '01-12-24'
+    temp_columns = ['core', 'left_hand', 'right_hand', 'left_foot', 'right_foot']
 
-    temp_columns = ['torso_temp', 'left_hand_temp', 'right_hand_temp', 'left_foot_temp', 'right_foot_temp']
-
-
+    # Extract timestamps from image paths
     def extract_timestamp(path):
         try:
             filename = os.path.basename(path)
@@ -42,12 +36,15 @@ def process_csv(input_csv_path, output_base="/home/cvmsct05/VALIDATION/plots_val
     df = df.dropna(subset=['timestamp'])
     df = df.sort_values(by='timestamp')
 
+    # Add to global baby_data for later aggregation
     baby_data[baby_id].append(df)
 
-    # Output path
-    output_dir = os.path.join(output_base, f"some_{baby_id}")
+    # Define relative output directory
+    rel_dir = os.path.dirname(input_csv_path).replace("/home/cvmsct05/temperatures_max_min/", "")
+    output_dir = os.path.join(output_base, rel_dir)
     os.makedirs(output_dir, exist_ok=True)
 
+    # Plot: All variables
     plt.figure(figsize=(12, 6))
     for col in temp_columns:
         if col in df.columns:
@@ -63,10 +60,11 @@ def process_csv(input_csv_path, output_base="/home/cvmsct05/VALIDATION/plots_val
     plt.savefig(output_path)
     plt.close()
 
-    print(f"Results saved to {output_dir}")
+
+    print(f"âœ… Results saved to {output_dir}")
 
 
-def plot_per_baby(output_base="/home/cvmsct05/VALIDATION/plots_validation/"):
+def plot_per_baby(output_base="/home/cvmsct05/diagnosis/"):
     temp_columns = ['core', 'left_hand', 'right_hand', 'left_foot', 'right_foot']
 
     for baby_id, df_list in baby_data.items():
@@ -128,7 +126,7 @@ def plot_per_baby(output_base="/home/cvmsct05/VALIDATION/plots_validation/"):
                 plt.savefig(var_output_path)
                 plt.close()
 
-        print(f"📊 Baby {baby_id} plots saved to {baby_dir}")
+        print(f"ðŸ“Š Baby {baby_id} plots saved to {baby_dir}")
 
 
 def main(input_path):
@@ -142,10 +140,18 @@ def main(input_path):
                     process_csv(full_path)
 
     plot_per_baby()
-    baby_data.clear()  # 🔁 Reset after each baby's folder is processed
+    baby_data.clear()  # ðŸ” Reset after each baby's folder is processed
     
-if __name__ == "__main__":
-    # Process all CSVs directly in this folder and its subfolders
-    main("/home/cvmsct05/VALIDATION/some_47")
 
+
+if __name__ == "__main__":
+    ### ONLY PUT SUBFOLDERS OF BABIES, DO NOT PUT A WHOLE FOLDER OF NEWBORNS
+    # main("/home/cvmsct05/diagnosis/32")
+    
+    for i in range(29, 56):
+        folder_path = f"/home/cvmsct05/diagnosis/{i}"
+        if os.path.isdir(folder_path):
+            main(folder_path)
+        else:
+            print(f"âŒ Skipping missing folder: {folder_path}")
 

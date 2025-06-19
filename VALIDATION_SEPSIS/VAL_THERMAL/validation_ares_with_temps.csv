@@ -1,0 +1,331 @@
+Image Name,Max Temp,Min Temp,torso_x,torso_y,left_hand_x,left_hand_y,right_hand_x,right_hand_y,left_foot_x,left_foot_y,right_foot_x,right_foot_y,torso_temp,left_hand_temp,right_hand_temp,left_foot_temp,right_foot_temp
+/data/uabcvmsc/shared/newborn/37/26.09.24 (2)/HM20010102090721.jpeg,38.9,31.1,207,138,49,428,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/37/26.09.24 (2)/HM20010102135615.jpeg,39.1,31.7,163,88,283,431,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/37/26.09.24 (2)/HM20010102172838.jpeg,38.6,30.9,,,79,346,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/37/28.09.24-29.09.24/HM20010104204218.jpeg,38.4,27.6,239,178,,,565,80,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/37/28.09.24-29.09.24/HM20010104213524.jpeg,38.8,26.6,139,88,65,281,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/37/28.09.24-29.09.24/HM20010105004111.jpeg,38.4,24.7,351,240,195,376,375,26,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/37/28.09.24-29.09.24/HM20010105042753.jpeg,39.4,26.1,,,275,150,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/37/30.09.24/HM20010106064739.jpeg,37.9,24.4,409,207,209,298,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/37/30.09.24/HM20010106101238.jpeg,38.4,25.8,252,71,213,232,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/37/01.10.24-02.10.24/HM20010107221538.jpeg,38.5,27.5,182,50,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/37/01.10.24-02.10.24/HM20010108012832.jpeg,39.1,27.9,112,48,29,226,,,,,515,350,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/37/01.10.24-02.10.24/HM20010108032555.jpeg,38.3,23.5,403,155,267,386,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/37/01.10.24-02.10.24/HM20010108051611.jpeg,38.9,28.3,141,52,71,178,,,582,391,564,210,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/37/01.10.24-02.10.24/HM20010108064155.jpeg,39.1,27.7,321,116,169,313,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/29/14.08.24-15.08.24/HM20240814213507.jpeg,38.2,31.4,488,252,,,484,397,75,15,164,306,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/29/14.08.24-15.08.24/HM20240814233140.jpeg,38.4,30.6,519,190,,,,,363,362,321,432,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/29/14.08.24-15.08.24/HM20240815020422.jpeg,38.5,31.5,520,242,,,552,395,140,271,101,430,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/29/14.08.24-15.08.24/HM20240815022400.jpeg,38.2,31.1,503,258,366,36,359,412,35,98,10,324,36.75,36.75,36.75,37.84,36.75
+/data/uabcvmsc/shared/newborn/29/14.08.24-15.08.24/HM20240815040714.jpeg,37.3,30.4,528,253,,,501,311,65,364,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/29/14.08.24-15.08.24/HM20240815042854.jpeg,37.6,30.9,505,262,551,44,538,372,39,176,42,376,37.26,36.92,36.26,36.26,36.26
+/data/uabcvmsc/shared/newborn/29/15.08.24/HM20240815061911.jpeg,37.3,30.9,516,245,,,,,177,305,234,380,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/29/15.08.24/HM20240815062521.jpeg,39.8,31,505,231,,,383,462,69,220,77,428,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/29/15.08.24/HM20240815094311.jpeg,39.1,31.5,520,270,517,146,,,59,169,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/29/15.08.24/HM20240815140313.jpeg,37.9,31,508,161,,,491,371,87,38,144,322,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/29/15.08.24-16.08.24/HM20240816004327.jpeg,36.9,30.6,557,257,,,,,298,224,209,444,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/29/17.08.24/HM20240817010954.jpeg,37.8,24,483,190,,,,,71,164,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/29/17.08.24/HM20240817023523.jpeg,37.7,30.2,489,174,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/29/17.08.24/HM20240817045153.jpeg,37.2,30.1,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/29/17.08.24-18.08.24/HM20240817181244.jpeg,38.5,29.8,472,162,75,413,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/29/17.08.24-18.08.24/HM20240817213310.jpeg,37.6,29.5,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/29/17.08.24-18.08.24/HM20240818023600.jpeg,37.3,29,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/29/18.08.24 (b)/HM20240818112055.jpeg,38.8,28.8,547,276,461,70,,,156,257,219,100,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/29/18.08.24 (b)/HM20240818155747.jpeg,44.8,18,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/29/18.08.24 (b)/HM20240818192326.jpeg,36.5,27.4,569,198,,,,,213,121,216,222,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/29/21.08.24/HM20240821082122.jpeg,37.8,21.3,520,229,479,125,,,153,298,212,401,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/29/21.08.24/HM20240821132912.jpeg,36.8,24.7,470,160,,,434,426,91,296,113,397,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/29/21.08.24/HM20240821155421.jpeg,36,27.8,453,254,483,114,447,413,131,228,39,294,35.58,34.33,35.16,31.88,34.33
+/data/uabcvmsc/shared/newborn/29/21.08.24/HM20240821160250.jpeg,36.1,21.5,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/30/23.08.24/HM20240823083955.jpeg,30.7,24.8,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/30/23.08.24/HM20240823084158.jpeg,36.6,26,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/30/23.08.24/HM20240823104515.jpeg,35.3,24.1,,,,,,,180,135,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/30/25.08.24-26.08.24/HM20240825210038.jpeg,36.4,28.2,93,178,89,357,148,27,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/30/25.08.24-26.08.24/HM20240825215303.jpeg,35.7,26.4,142,195,116,376,191,78,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/30/25.08.24-26.08.24/HM20240826023426.jpeg,36.4,27,159,167,127,430,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/30/27.08.24/HM20240827124854.jpeg,36.1,27.1,119,115,35,246,,,513,317,536,263,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/30/28.08.24/HM20240828064336.jpeg,36.6,20.6,259,166,163,357,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/30/28.08.24/HM20240828090234.jpeg,35.3,28,112,162,87,355,188,42,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/30/28.08.24/HM20240828131127.jpeg,36,26.8,164,165,97,382,211,16,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/30/28.08.24/HM20240828142224.jpeg,34.9,23,190,286,111,451,121,380,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/30/28.08.24-29.08.24/HM20240829052944.jpeg,36.5,28,208,84,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/30/28.08.24-29.08.24/HM20240829055624.jpeg,36.4,26.9,67,192,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/30/28.08.24-29.08.24/HM20240829074106.jpeg,36,28,154,313,73,443,53,400,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/31/30.08.24/HM20240830005550.jpeg,36.3,24.4,117,104,46,276,,,,,595,164,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/31/30.08.24/HM20240830051113.jpeg,35.7,23.6,281,136,153,285,466,263,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/31/30.08.24/HM20240830062317.jpeg,35.8,25.3,233,210,159,338,187,172,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/31/30.08.24/HM20240830081853.jpeg,36.7,25.1,448,215,478,442,,,189,171,223,85,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/31/30.08.24/HM20240830085052.jpeg,35.1,25.3,209,114,151,238,,,568,410,504,167,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/31/01.09.24/HM20240901050432.jpeg,35.5,24.3,127,112,,,,,557,392,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/31/01.09.24/HM20240901050738.jpeg,36.2,27.2,109,162,74,326,,,503,438,513,219,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/31/01.09.24/HM20240901071126.jpeg,35.4,24.8,161,109,105,242,,,546,290,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/31/01.09.24/HM20240901080539.jpeg,34.4,23.9,157,84,56,270,,,,,547,176,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/31/01.09.24/HM20240901085654.jpeg,35.1,26.1,199,86,85,123,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/31/01.09.24/HM20240901101959.jpeg,35.2,24.2,319,137,,,,,,,585,432,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/31/01.09.24-02.09.24/HM20240901211120.jpeg,34.9,23.3,111,170,23,284,152,18,561,350,593,281,34.31,26.76,33.72,26.76,30.21
+/data/uabcvmsc/shared/newborn/31/01.09.24-02.09.24/HM20240901222306.jpeg,35.3,27.2,93,170,53,311,81,65,577,302,489,358,32.03,33.68,34.89,31.23,31.23
+/data/uabcvmsc/shared/newborn/31/01.09.24-02.09.24/HM20240901230359.jpeg,35.9,24.8,131,238,81,332,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/31/01.09.24-02.09.24/HM20240901235506.jpeg,36,25.5,12,238,,,,,,,535,426,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/31/01.09.24-02.09.24/HM20240902034338.jpeg,34.8,26.6,204,402,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/31/01.09.24-02.09.24/HM20240902035859.jpeg,35.9,24.3,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/31/01.09.24-02.09.24/HM20240902053527.jpeg,35.8,26.8,135,144,89,420,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/31/02.09.24-03.09.24/HM20240902231735.jpeg,36.3,22.8,311,301,186,380,265,127,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/31/02.09.24-03.09.24/HM20240903002356.jpeg,35.9,22.9,8,160,,,332,62,596,418,607,256,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/31/02.09.24-03.09.24/HM20240903003517.jpeg,34.9,21.3,35,139,33,374,345,87,433,395,627,461,34.21,33.51,30.79,29.46,29.46
+/data/uabcvmsc/shared/newborn/31/02.09.24-03.09.24/HM20240903065518.jpeg,35.5,24.7,44,173,9,430,63,51,,,377,372,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/32/05.09.24-06.09.24/HM20240905220028.jpeg,41.7,33.2,158,340,,,129,92,,,581,172,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/32/05.09.24-06.09.24/HM20240905222659.jpeg,42.1,36.1,235,288,162,407,158,65,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/32/05.09.24-06.09.24/HM20240906042819.jpeg,41.5,36.2,421,309,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/32/06.09.24-07.09.24/HM20240907004914.jpeg,41.6,32.8,192,167,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/32/06.09.24-07.09.24/HM20240907031412.jpeg,41.7,32.3,359,118,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/32/08.09.24/HM20240908010601.jpeg,41.5,35.3,230,206,198,381,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/32/08.09.24/HM20240908080938.jpeg,40.7,34.2,240,228,,,153,91,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/32/08.09.24/HM20240908092615.jpeg,40.9,32.5,110,417,,,287,159,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/32/11.09.24/HM20240911101029.jpeg,40.6,34.1,147,290,57,391,,,579,364,569,195,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/32/11.09.24/HM20240911140729.jpeg,40.7,34.4,177,380,,,,,603,403,609,214,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/34/12.09.24/HM20240912152855.jpeg,41,33.3,199,338,,,102,92,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/34/12.09.24/HM20240912235525.jpeg,41.7,33.7,133,426,,,99,308,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/34/13.09.24/HM20240913105903.jpeg,40.8,27.6,104,277,,,398,101,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/34/13.09.24/HM20240913151419.jpeg,41,33.3,39,366,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/35/14.09.24/HM20240914092154.jpeg,40.1,33.7,177,272,129,378,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/34/14.09.24-15.09.24/HM20240914233359.jpeg,41.1,34.8,43,312,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/35/14.09.24-15.09.24/HM20240915003842.jpeg,38.4,33.8,196,356,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/35/15.09.24 (1)/HM20240915022754.jpeg,39.2,33.3,221,320,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/34/15.09.24 (1)/HM20240915060455.jpeg,41.2,33.7,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/35/15.09.24/HM20240915123317.jpeg,38.3,31,249,355,,,59,168,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/35/15.09.24/HM20240915185201.jpeg,37.9,31,213,365,,,505,158,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/35/15.09.24-16.09.24/HM20240915210036.jpeg,38.5,39.8,209,323,,,502,54,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/35/15.09.24-16.09.24/HM20240916022508.jpeg,39,30.8,233,216,106,306,285,32,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/35/15.09.24-16.09.24/HM20240916032227.jpeg,40.4,30.2,225,133,134,441,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/35/16.09.24/HM20240916040538.jpeg,39.2,32.4,239,158,99,323,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/35/16.09.24/HM20240916054430.jpeg,39.7,30.9,136,175,104,441,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/36/25.09.24-26.09.24/HM20240925200409.jpeg,41.1,31.7,162,369,,,364,80,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/36/25.09.24-26.09.24/HM20240925213802.jpeg,41,31.8,160,343,,,271,40,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/36/25.09.24-26.09.24/HM20240926021645.jpeg,40.9,31.1,155,334,,,335,50,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/36/27.09.24/HM20240927042453.jpeg,40.6,32.3,127,336,,,141,96,,,524,89,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/36/28.09.24-29.09.24/HM20240929035210.jpeg,40.6,31.5,223,418,,,106,283,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/36/30.09.24 (2)/HM20240930105946.jpeg,41.1,32.4,59,268,,,112,105,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/36/30.09.24 (2)/HM20240930152846.jpeg,41.1,31.4,96,259,,,,,,,586,285,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/36/10.10.24 (2)/HM20241001134039.jpeg,40.9,29,337,361,133,371,275,152,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/36/10.10.24 (2)/HM20241001160252.jpeg,40.8,26.1,153,200,,,223,62,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/36/10.10.24 (2)/HM20241001183225.jpeg,40.7,24.6,199,378,,,102,261,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/38/02.10-03.10.24/HM20241002182740.jpeg,41.7,28.7,209,227,,,204,47,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/38/02.10-03.10.24/HM20241002201755.jpeg,41.9,34.3,209,240,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/38/03.10.24 (1)/HM20241003015151.jpeg,41.9,33,193,242,173,421,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/38/03.10.24/HM20241003171746.jpeg,41,32.1,128,258,,,65,68,569,408,539,34,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/38/03-05.10.24/HM20241004122214.jpeg,41.9,33.8,97,248,79,461,101,20,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/38/03-05.10.24/HM20241004140216.jpeg,40.5,33.4,96,204,142,414,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/38/05.10.24 (1)/HM20241005173502.jpeg,41.4,29.7,262,244,252,468,224,71,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/38/05.10.24/HM20241005191405.jpeg,41.2,32.3,181,244,126,418,40,222,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/38/05.10.24/HM20241005220501.jpeg,41.2,33.2,37,250,82,452,33,20,,,593,235,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/38/05.10.24/HM20241006023330.jpeg,41.3,33,87,271,,,58,58,,,620,180,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/39/10.10.24/HM20241010123609.jpeg,41.6,30.4,161,96,312,342,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/39/10.10.24/HM20241010194157.jpeg,42.1,30.2,577,214,457,429,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/39/10.11.24-11.11.24/HM20241010231412.jpeg,42,31.9,,,367,404,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/39/10.11.24-11.11.24/HM20241011034037.jpeg,41.7,31.6,307,110,270,300,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/39/10.11.24-11.11.24/HM20241011042937.jpeg,42,31.5,422,108,350,368,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/39/11.10.24 (1)/HM20241011085055.jpeg,40.7,29.8,303,123,273,324,235,52,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/39/11.10.24 (1)/HM20241011094057.jpeg,40.9,31.9,116,100,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/39/11.10.24 (1)/HM20241011124039.jpeg,41.8,28.4,346,51,143,172,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/39/15.10.24 & 11.10.24-12.10.24/HM20241012015756.jpeg,41,32.8,303,366,,,316,106,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/39/15.10.24 & 11.10.24-12.10.24/HM20241015105147.jpeg,39.5,36.5,178,398,,,134,279,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/39/16.10.24 (2)/HM20241016133841.jpeg,50.1,42.4,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/40/23.10.24/HM20241023144414.jpeg,40.3,32,232,370,,,213,172,,,616,99,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/40/24.10.24/HM20241024143203.jpeg,41.9,22.9,237,328,,,406,26,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/40/25.10.24/HM20241025112033.jpeg,41.7,27,311,376,,,589,130,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/41/29.10.24/HM20241029180243.jpeg,42.2,27.4,582,180,,,,,67,369,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/41/30.10.24 (2)/HM20241030143153.jpeg,41.2,32.1,422,349,320,128,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/41/30.10.24 (2)/HM20241030155334.jpeg,41.4,26.2,579,219,476,30,,,143,441,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/41/30.10.24 (2)/HM20241030221726.jpeg,40.6,31.8,539,276,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/41/31.10.24-01.11.24/HM20241031160308.jpeg,41.3,33.8,573,216,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/41/31.10.24-01.11.24/HM20241031182300.jpeg,35.6,32.1,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/41/31.10.24-01.11.24/HM20241031215825.jpeg,41,25.6,435,370,375,153,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/41/31.10.24-01.11.24/HM20241101002324.jpeg,41.3,34.2,520,268,463,5,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/41/01.11.24 (2)/HM20241101090914.jpeg,41.6,34.8,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/41/01.11.24 (2)/HM20241101152902.jpeg,39.5,23.3,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/41/01.11.24 (2)/HM20241101173304.jpeg,40.8,33.2,560,278,531,104,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/42/05.11.24-06.11.24/HM20241105193003.jpeg,43,34.7,251,334,,,441,22,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/42/05.11.24-06.11.24/HM20241106002104.jpeg,42.3,42.3,189,306,,,225,12,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/42/07.11.24/HM20241107131810.jpeg,41.4,36,244,350,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/42/10.11.24 (1)/HM20241110033232.jpeg,41.9,36.5,113,361,,,143,182,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/42/10.11.24 (1)/HM20241110102547.jpeg,41.3,36.4,79,356,,,47,188,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/42/11.11.24-12.11.24/HM20241111231612.jpeg,41.4,32.8,230,353,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/42/11.11.24-12.11.24/HM20241112024727.jpeg,41.3,32.7,312,329,493,217,364,118,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/42/11.11.24-12.11.24/HM20241112051121.jpeg,41.6,26.9,199,349,,,148,285,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/43/6.11.24/HM20240611235548.jpeg,39.2,28.5,450,222,376,21,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/43/6.11.24/HM20240612000604.jpeg,38.7,28.5,,,,,57,258,,,505,392,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/43/7.11.24/HM20240612154207.jpeg,38.7,31.7,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/43/7.11.24/HM20240612071424.jpeg,39.1,33,309,160,117,104,628,16,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/43/7.11.24/HM20240612154207.jpeg,38.9,32.7,140,333,,,168,74,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/43/7.11.24/HM20240612174945.jpeg,38.2,21.9,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/43/07.11.24-08.11.24/HM20240612202402.jpeg,39.2,32.8,357,425,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/43/07.11.24-08.11.24/HM20240612213501.jpeg,38.6,23.7,246,200,,,285,24,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/43/07.11.24-08.11.24/HM20240613005952.jpeg,39,32.9,,,,,180,96,,,533,106,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/43/8.11.24/HM20240613082732.jpeg,32.8,29.9,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/43/8.11.24/HM20240613112150.jpeg,38.8,32.5,179,294,29,432,230,68,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/44/9.11.24/HM20240614141421.jpeg,38,26.4,195,230,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/44/10.11.24-11.11/HM20240615160721.jpeg,40.5,23.5,194,228,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/44/11.11.24 (1)/HM20240616112845.jpeg,38.9,23,211,203,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/44/12.11.24 (2)/HM20240617111616.jpeg,37.4,25,223,231,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/44/12.11.24 (2)/HM20240617151721.jpeg,37.8,29.4,235,232,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/44/12.11.24-13.11.24/HM20240617203747.jpeg,39.4,29.1,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/44/13.11.24/HM20240618092305.jpeg,38.3,22,247,268,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/44/13.11.24 (2)/HM20240618140847.jpeg,37.6,19.9,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/44/13.11.24-14.11.24/HM20240618213712.jpeg,40.8,30.9,245,260,,,224,14,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/44/14.11.24/HM20240619103226.jpeg,35.6,26,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/44/14.11.24/HM20240619133531.jpeg,37.4,23.6,263,318,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/44/14.11.24-15.11.24/HM20240619165708.jpeg,37.9,28.3,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/45/13.11.24-14.11.24/HM20241113211253.jpeg,40.6,34.3,131,443,,,134,225,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/45/14.11.24/HM20241114030603.jpeg,43.3,34.4,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/45/14.11.24/HM20241115172301.jpeg,44.2,35.2,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/44/15.11.24/HM20241116034444.jpeg,38.5,28.4,,,,,,,237,148,526,267,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/44/15.11.24/HM20241116095215.jpeg,39.7,30.6,115,88,147,408,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/46/16.11-17.11-18.11.24/HM20241116114626.jpeg,42,33.7,219,422,,,237,234,,,532,101,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/44/16.11.24/HM20241117044130.jpeg,39,25,147,144,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/46/18.11.24 (1)/HM20241118095311.jpeg,42.5,35.1,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/46/18.11.24/HM20241118133140.jpeg,40.4,33.1,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/46/18.11.24-19.11.24/HM20241118193406.jpeg,39,34,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/46/18.11.24-19.11.24/HM20241118203623.jpeg,41.2,34.5,,,,,426,138,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/46/19.11.24/HM20241119141604.jpeg,41.4,34.6,368,416,,,430,113,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/44/18.11.24/HM20241119143550.jpeg,37.7,23,489,152,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/46/19.11.24/HM20241119145250.jpeg,41.5,34.6,205,356,297,330,145,143,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/46/19.11.24/HM20241119205017.jpeg,41.9,34.7,167,292,,,406,121,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/46/19.11.24-20.11.24/HM20241119222818.jpeg,41.8,34.5,325,162,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/46/20.11.24 (1)/HM20241120053059.jpeg,42.3,33.7,408,226,212,316,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/46/20.11.24 (1)/HM20241120092247.jpeg,42,36.6,,,,,217,121,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/44/19.11.24 (2)/HM20241120092339.jpeg,39.5,3.6,214,109,315,398,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/46/20.11.24 (1)/HM20241120132141.jpeg,41,32.1,220,326,198,460,217,208,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/44/19.11.24-20.11.24/HM20241120180838.jpeg,41.7,25.1,188,99,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/44/20.11.24-21.11.24/HM20241122012531.jpeg,39.2,25.3,137,112,126,410,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/46/22.11.24 (1)/HM20241122030914.jpeg,41.7,31.9,341,373,,,325,142,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/46/22.11.24 (1)/HM20241122065843.jpeg,42.1,34.1,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/46/22.11.24/HM20241122091331.jpeg,42.1,34.4,391,328,276,436,399,83,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/46/22.11.24/HM20241122130320.jpeg,41.7,25,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/46/22.11.24/HM20241122160452.jpeg,42.1,33.2,287,358,,,549,146,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/46/22.11.24-23.11.24/HM20241122171904.jpeg,42.5,33.4,514,371,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/46/24.11.24 (1)/HM20241124093237.jpeg,39.9,32.5,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/24.11.24 (1)/HM20241124110745.jpeg,39.2,32.9,215,260,,,406,28,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/46/24.11.24/HM20241124182157.jpeg,42,30.4,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/46/24.11.24/HM20241124184129.jpeg,41.7,33.9,151,431,,,347,301,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/46/24.11.24-25.11.24/HM20241124224621.jpeg,41.2,34.6,65,377,,,,,,,543,370,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/46/24.11.24-25.11.24/HM20241125002813.jpeg,41.5,35.9,68,459,,,,,473,338,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/24.11.24-25.11.24/HM20241125033154.jpeg,38.6,30.9,102,230,33,352,,,,,563,352,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/25.11.24 (1)/HM20241125035826.jpeg,39.1,33.9,121,260,,,,,,,541,401,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/25.11.24 (1)/HM20241125063639.jpeg,38.6,32.9,66,235,13,390,,,584,420,539,214,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/25.11.24 (1)/HM20241125101712.jpeg,39,30.2,239,211,165,428,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/46/24.11.24-25.11.24/HM20241125114338.jpeg,42.5,39.1,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/25.11.24-26.11.24/HM20241125204101.jpeg,35.2,28.2,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/25.11.24-26.11.24/HM20241125204506.jpeg,33.7,27.5,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/48/25.11.24-26.11.24/HM20241125210134.jpeg,42.3,35.3,291,234,153,418,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/48/26.11.24 (1)/HM20241126094307.jpeg,44.6,35.3,231,350,,,234,64,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/26.11.24 (1)/HM20241126133854.jpeg,38.7,33.1,223,231,,,328,339,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/26.11.24/HM20241126135515.jpeg,41.3,27.5,191,164,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/26.11.24/HM20241126140123.jpeg,38.4,26.9,220,246,,,262,84,,,609,34,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/48/26.11.24/HM20241126173554.jpeg,41.6,31.9,108,324,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/48/26.11.24/HM20241126190646.jpeg,42.6,35.9,87,336,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/48/26.11.24/HM20241126214504.jpeg,41.7,34.7,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/48/26.11.24-27.11.24/HM20241126230421.jpeg,41.2,32.1,225,406,,,215,238,,,549,102,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/26.11.24-27.11.24/HM20241127053654.jpeg,39.1,31,151,234,,,405,120,555,448,554,363,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/27.11.24 (1)/HM20241127090827.jpeg,42,24.1,306,220,121,334,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/27.11.24 (1)/HM20241127093312.jpeg,42.3,30.4,295,196,116,342,253,229,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/27.11.24/HM20241127220226.jpeg,39,33.7,431,170,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/27.11.24/HM20241127234730.jpeg,39.4,33.4,573,126,321,209,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/28.11.24 (1)/HM20241128052320.jpeg,38.6,38.9,424,251,,,463,336,31,336,91,228,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/28.11.24/HM20241128084926.jpeg,35.1,25.8,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/28.11.24/HM20241128085435.jpeg,42,25.8,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/28.11.24/HM20241128100640.jpeg,37.6,32.4,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/28.11.24/HM20241128170404.jpeg,39.3,31,146,246,,,218,56,,,523,10,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/28.11.24-29.11.24/HM20241128235712.jpeg,38.1,29.4,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/29.11.24/HM20241129040839.jpeg,40.4,30.3,135,262,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/29.11.24/HM20241129060706.jpeg,39.5,27.8,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/29.11.24/HM20241129090229.jpeg,38,30.5,166,212,131,409,187,132,,,602,284,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/49/29.11.24 (2)/HM20241129133120.jpeg,41.3,31.1,272,366,,,219,297,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/29.11.24 (1)/HM20241129135527.jpeg,38.9,30.7,237,316,156,405,247,82,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/29.11.24-30.11.24 (2)/HM20241129192151.jpeg,38.8,30.7,246,268,180,405,239,110,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/29.11.24 (1)/HM20241129200447.jpeg,38.5,31.1,212,288,117,362,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/29.11.24 (1)/HM20241129222554.jpeg,38.7,29.4,171,237,,,,,455,426,503,236,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/29.11.24-30.11.24/HM20241129233653.jpeg,38.6,31.4,188,239,,,,,608,286,582,58,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/01.12.24 (111)/HM20241130171605.jpeg,39.8,26,271,245,,,,,586,432,559,318,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/01.12.24 (111)/HM20241130190523.jpeg,38.4,26.6,237,204,,,217,107,624,365,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/01.12.24 (11)/HM20241201090815.jpeg,37.3,22,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/01.12.24 (11)/HM20241201091019.jpeg,37.7,25.2,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/01.12.24 (11)/HM20241201135307.jpeg,38.2,26.8,,,,,199,264,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/47/01.12.24 (1)/HM20241201181548.jpeg,38.8,31.7,228,220,175,448,152,279,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/50/01.12.24-02.12.24/HM20241201195019.jpeg,40,23.2,149,121,,,,,446,448,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/50/01.12.24-02.12.24/HM20241201210551.jpeg,38.9,33.3,165,98,138,364,,,449,387,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/49/01.12.24-02.12.24/HM20241202061320.jpeg,47.9,27.7,288,275,,,189,133,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/50/02.12.24/HM20241202123250.jpeg,39.2,33.2,151,58,37,198,,,452,424,526,98,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/49/02.12.24/HM20241202130139.jpeg,41.5,25.7,274,275,176,388,253,62,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/50/02.12.24-03.12.24/HM20241202224822.jpeg,39.2,32.1,,,135,126,,,565,239,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/50/02.12.24-03.12.24/HM20241203002015.jpeg,38.8,32.8,469,200,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/50/03.12.24 (2)/HM20241203141737.jpeg,38.8,25.4,183,56,68,186,,,566,322,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/49/02.12.24-03.12.24/HM20241203181354.jpeg,32,25.4,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/50/03.12.24-04.12.24/HM20241204041806.jpeg,38.7,31.1,132,47,,,,,238,405,557,247,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/49/03.12.24-04.12.24/HM20241204072323.jpeg,42.5,25.7,407,245,186,320,267,181,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/49/04.12.24/HM20241204090223.jpeg,40.3,24.8,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/49/04.12.24 (2)/HM20241204092045.jpeg,39.9,28.1,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/50/04.12.24-05.12.24/HM20241204161457.jpeg,40,32.4,144,106,,,,,462,348,518,318,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/51/04.12.24-05.12.24/HM20241204174844.jpeg,42.3,27.3,182,306,,,159,48,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/51/04.12.24-05.12.24/HM20241204200733.jpeg,41.6,31.9,125,320,,,,,,,447,372,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/51/04.12.24-05.12.24/HM20241204221002.jpeg,41.8,32,143,277,,,,,562,404,545,146,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206023126.jpeg,38.9,29.5,238,114,107,232,,,,,623,364,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/50/06.12.24/HM20241206063320.jpeg,38.8,29.6,155,74,35,214,,,443,412,577,142,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/50/06.12.24 (2)/HM20241206105045.jpeg,38.4,28.5,327,118,178,126,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/50/06.12.24 (2)/HM20241206141357.jpeg,38.1,31.5,,,97,51,,,338,409,621,336,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/50/06.12.24-07.12.24/HM20241207025923.jpeg,37.6,18.8,,,,,,,445,331,544,146,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/51/07.12.24/HM20241207080320.jpeg,41.8,30.7,109,213,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/51/07.12.24/HM20241207084310.jpeg,40.9,25.9,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/51/07.12.24-08.12.24/HM20241208054120.jpeg,40.2,31.5,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/51/08.12.24 (2)/HM20241208222254.jpeg,41,29.7,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/51/08.12.24 (2)/HM20241208232743.jpeg,40.7,30.3,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/51/08.12.24-09.12.24/HM20241209003639.jpeg,41.1,30.3,123,226,,,154,56,605,358,573,132,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/51/08.12.24-09.12.24/HM20241209032013.jpeg,42.4,27.2,79,283,,,125,78,,,476,80,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/52/09.12.24-10.12.24/HM20241209164659.jpeg,39.7,33.8,194,296,146,445,393,102,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/52/09.12.24-10.12.24/HM20241209212342.jpeg,39.1,33.3,75,289,194,470,45,90,501,414,555,306,38.80,38.80,38.80,37.35,37.64
+/data/uabcvmsc/shared/newborn/52/09.12.24-10.12.24/HM20241210002935.jpeg,39.4,33,131,288,129,458,102,140,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/52/10.12.24 (1)/HM20241210064821.jpeg,38.8,32.4,120,320,,,59,185,589,224,523,42,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/52/10.12.24 (2)/HM20241210111658.jpeg,38.3,29.2,42,368,,,,,626,400,526,271,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/52/10.12.24-11.12.24/HM20241211002115.jpeg,38.7,29.1,,,,,226,148,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/53/11.12.24/HM20241211075636.jpeg,40.7,26.5,350,206,253,382,348,79,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/52/11.12.24 (2)/HM20241211120546.jpeg,37.6,31.2,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/52/12.12.24-13.12.24/HM20241212231948.jpeg,39.5,28.3,548,151,,,,,157,295,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/53/13.12.24/HM20241213121537.jpeg,42.3,27,63,218,,,301,64,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/53/13.12.24/HM20241213133312.jpeg,41.5,29.9,115,273,118,430,,,,,563,341,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/53/13.12.24-14.12.24/HM20241213213502.jpeg,41.4,27.7,149,241,269,196,124,70,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/52/15.12.24/HM20241215073549.jpeg,38.4,23,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/52/15.12.24 (2)/HM20241215171352.jpeg,39,25.9,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/52/16.12.24/HM20241216090045.jpeg,38.7,26.4,469,292,503,427,473,113,99,368,133,284,38.07,35.61,33.78,33.78,35.61
+/data/uabcvmsc/shared/newborn/52/16.12.24 (2)/HM20241216155521.jpeg,37.5,20.6,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/54/16.12.24-17.12.24/HM20241216191640.jpeg,42.9,30.9,206,366,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/54/17.12.24 (2)/HM20241217154854.jpeg,40.9,34.1,212,229,,,,,,,591,76,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/54/17.12.24 (2)/HM20241217191607.jpeg,41.9,23,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/54/18.12.24 (2)/HM20241218093847.jpeg,44.5,32.2,181,278,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/54/18.12.24-19.12.24/HM20241219052814.jpeg,42.2,33.1,208,279,265,447,,,,,585,66,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/54/19.12.24 (1)/HM20241219062220.jpeg,41.8,32.8,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/54/19.12.24 (1)/HM20241219092911.jpeg,41.6,31.8,240,263,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/55/19.12.24/HM20241219093553.jpeg,42,38.1,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/54/19.12.24 (2)/HM20241219195705.jpeg,41.2,31.1,152,270,,,165,130,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/55/19.12.24-20.12.24/HM20241220041400.jpeg,38,29.1,216,202,96,338,308,68,,,603,303,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/54/19.12.24-20.12.24/HM20241220042229.jpeg,41.8,31.7,197,303,146,466,184,92,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/54/20.12.24/HM20241220082028.jpeg,41.2,31.5,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/55/20.12.24 (1)/HM20241220083624.jpeg,35.5,26.7,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/55/20.12.24 (1)/HM20241220091107.jpeg,34.5,26.6,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/55/20.12.24 (1)/HM20241220093031.jpeg,37.7,27.2,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/54/20.12.24-21.12.24/HM20241220215324.jpeg,41.1,30.9,177,222,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/54/21.12.24 (0)/HM20241221054710.jpeg,42.3,31,167,200,,,,,,,513,191,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/54/21.12.24 (1)/HM20241221093556.jpeg,40.4,30.5,124,264,75,339,139,116,,,371,61,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/55/21.12.24 (1)/HM20241221102118.jpeg,37.8,23,191,168,75,247,282,37,,,601,304,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/54/21.12.24 (1)/HM20241221152006.jpeg,40.9,32,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/54/21.12.24 (1)/HM20241221174356.jpeg,41.6,31.5,157,180,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/54/21.12.24 (1)/HM20241221200445.jpeg,42.1,28.1,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/54/22.12.24 (1)/HM20241222105430.jpeg,40.5,29.8,114,228,124,355,71,93,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/54/22.12.24 (2)/HM20241222172031.jpeg,41,31.8,177,244,199,385,167,153,,,533,136,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/54/23.12.24 (1)/HM20241223091427.jpeg,41.3,32.1,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/54/23.12.24 (2)/HM20241223143233.jpeg,41.5,31.1,155,341,,,140,207,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/54/23.12.24 (2)/HM20241223151039.jpeg,41.9,31.3,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/55/24.12.24/HM20241224084855.jpeg,37.4,23,159,98,66,246,,,573,370,593,112,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/55/24.12.24/HM20241224095559.jpeg,37.8,28.8,188,174,96,346,191,109,514,373,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/55/25.12.24 (1)/HM20241225081731.jpeg,37.7,28.4,,,,,,,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/55/25.12.24/HM20241225114802.jpeg,38,25.5,,,87,345,,,458,453,537,392,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/55/25.12.24/HM20241225131944.jpeg,37.9,29.6,179,194,221,458,259,38,,,,,nan,nan,nan,nan,nan
+/data/uabcvmsc/shared/newborn/55/26.12.24 (1)/HM20241226113521.jpeg,37.3,29.9,,,,,,,,,,,nan,nan,nan,nan,nan
