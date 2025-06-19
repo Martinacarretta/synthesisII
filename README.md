@@ -76,6 +76,17 @@ Flag images with: Extreme ΔT values, fever, or hhypothermia
 [move images](others/move_images.py) moves imgaes to another folder
 
 [save](others/save.py) creates a backup of the provided directory
+
+[SAM](others/sam.ipynb) (Segment Anything Model) trials
+
+[U-net](others/unet.ipynb) trials
+
+[yolo](others/yolo_pose.ipynb) pose detection model trials
+
+[googlePose](others/googlePose.ipynb) pose detection model trials
+
+[skinColor](others/skin_color.ipynb) skin color pixel classification
+
  
 ## Notes:
 Data anonymization and ethical considerations are followed.
