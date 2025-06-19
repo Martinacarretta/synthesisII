@@ -28,26 +28,25 @@ The goal is to develop a system that:
 In this step, there are also heuristics to discard keypoints given the distance of shoulders, the distance from nose to feet, skin color...
     - [valid 5 keypoints](keypoints_valid.py)
 
-4. Mapping of the keypoints from normal photograph to thermal (since the thermal is a cropped version of the normal)
+4. Mapping of the keypoints from normal photograph to thermal (since the thermal is a cropped version of the normal). Conversion of the thermal image to grayscale (manual since the automatic conversion does not preserve the order of the temperatures). Extraction of the grayscale value of the keypoints. Conversion from grayscale value to thermal (using normalization with the min and max temperatures fo that photo) (discarding of keypints with abnormal temperatures)
     - [temperatures](temperatures.py)
 
-5. Conversion of the thermal image to grayscale (manual since the automatic conversion does not preserve the order of the temperatures)
-    - [temperatures](temperatures.py)
+5. CSV back-up to avoid incorrect modifications to the files in the detection phase. 
+    - [save](save.py)
 
-6. Extraction of the grayscale value of the keypoints
-    - [temperatures](temperatures.py)
-
-7. Conversion from grayscale value to thermal (using normalization with the min and max temperatures fo that photo) (discarding of keypints with abnormal temperatures)
-    - [temperatures](temperatures.py)
-
-8. Temperature Difference Calculation
+6. Temperature Difference Calculation
 Compute ΔT = T_core - T_limb (being t_limb the average of the limbs)
-Analyze asymmetry or abnormal values
+Analyze asymmetry or abnormal values. Flag images with: Extreme ΔT values, fever, or hhypothermia
     - [diagnosis](diagnosis.py)
 
-6. Anomaly Detection
-Flag images with: Extreme ΔT values, fever, or hhypothermia
-    - [diagnosis](diagnosis.py)
+7. Creates the plots of the extracted temperatures. It has two different options; plots are created for each subfolder or for the entire baby folder. 
+    - [plots](plots.py)
+
+8. Smooths the plots created in the previous step using a rolling average of 45
+    - [noise](noise.py)
+
+9. Merges all the csv from the different baby subfolders into a single one
+    - [joint](joint.py)
 
 ## Tools and libraries:
 
