@@ -53,7 +53,7 @@ Analyze asymmetry or abnormal values. Flag images with: Extreme ΔT values, feve
 
 2. [keypoints.ipynb](VALIDATION_SEPSIS/keypoints.ipynb): Used for annotating keypoints in thermal images.
 
-3. [keypoints.ipynb](VALIDATION_SEPSIS/keypoints.ipynb): Also used for annotating keypoints in visual images.
+3. [keypoints2.ipynb](VALIDATION_SEPSIS/keypoints2.ipynb): Also used for annotating keypoints in visual images.
 
 4. [plots_VIS](VALIDATION_SEPSIS/plots_VIS.py): Adapted code for visualizing time series plots of the visual images.
 
