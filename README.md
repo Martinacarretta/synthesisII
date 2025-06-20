@@ -50,19 +50,18 @@ Analyze asymmetry or abnormal values. Flag images with: Extreme ΔT values, feve
 
 ## Validation Overview:
 1. filter_vis_images.py: Filters images to include only the visual ones for annotating full days for Baby 47.
-   - [filter](filter_vis_images.py)
 
-3. keypoints.ipynb: Used for annotating keypoints in thermal images.
+2. keypoints.ipynb: Used for annotating keypoints in thermal images.
 
-4. keypoints.ipynb: Also used for annotating keypoints in visual images.
+3. keypoints.ipynb: Also used for annotating keypoints in visual images.
 
-5. plots_VIS: Adapted code for visualizing time series plots of the visual images.
+4. plots_VIS: Adapted code for visualizing time series plots of the visual images.
 
-6. temperatures_keypoints_complete.py: Maps the temperatures of the annotated keypoints in the images.
+5. temperatures_keypoints_complete.py: Maps the temperatures of the annotated keypoints in the images.
 
-7. temperatures_keypoints_val.py: Attempts to map temperatures of the annotated keypoints in the thermal images, but only works when all five keypoints are annotated.
+6. temperatures_keypoints_val.py: Attempts to map temperatures of the annotated keypoints in the thermal images, but only works when all five keypoints are annotated.
 
-8. visualize_annotations.py: Displays annotations from three different annotators to allow visual comparison.
+7. visualize_annotations.py: Displays annotations from three different annotators to allow visual comparison.
 
 
 ## Tools and libraries:
